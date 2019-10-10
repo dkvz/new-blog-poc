@@ -1,0 +1,71 @@
+:root {
+  --primary-color: darkblue;
+  --secondary-color: silver;
+  --accent-color: deeppink;
+  --light-color: #ebeded;
+  --dark-color: #555;
+  --main-padding: 0.6rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--dark-color);
+  padding: 0;
+  margin: 0;
+}
+
+body > header {
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  background-image: url('../img/gilleshead_350.png');
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+h1.header-title {
+  margin: 0;
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+  font-size: 1.2rem;
+}
+
+body > footer {
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+}
+
+body > main {
+  flex: 1;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+header, footer, main {
+  padding: var(--main-padding);
+}
+
+.center-image {
+  text-align: center;
+}
+
+.center-image img {
+  max-width: 100%;
+}
+
+.smaller {
+  font-size: 0.6em;
+}
