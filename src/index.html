@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>DkVZ.eu Blog 3.0 - Proof of concept</title>
 </head>
+
 <body>
   <header>
     <h1 class="header__title">Le BdGC <span class="text text--smaller">de DkVZ</span></h1>
   </header>
   <main>
     <div class="content-card">
-      <p>Some text</p>
-      <p class="center-image">
-        <img src="img/gillescut_300.png" alt="Test Image 2">
+      <h1 class="main-title">Blog des Gens Compliqués</h1>
+      <div class="cta-buttons">
+        <button class="btn cta-buttons__btn">Lire mes articles</button>
+        <button class="btn cta-buttons__btn">Lire mes brèves</button>
+      </div>
+    </div>
+    <div class="content-card">
+      <p>La citation aléatoire serait ici. Sur un plus grand écran on mettrait ceci et les dernières brèves côte-à-côte.
       </p>
+
+      <div class="card-list">
+
+        <h2 class="card-list__title">Dernières brèves</h2>
+
+        <div class="card card-list__card">
+          <header class="card__header">
+            J'écris des choses
+          </header>
+          <div class="card__body">
+            <p>Résumé de la brève ici.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, nulla?</p>
+          </div>
+        </div>
+
+        <div class="card card-list__card">
+          <header class="card__header">
+            Une autre, pourquoi pas
+          </header>
+          <div class="card__body">
+            <p>Coucou</p>
+            <p>C'est chouette</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </main>
-  <footer>
-    Some footer text
+  <footer class="footer">
+    <div>
+      <p>Some footer text</p>
+      <p>Some footer text</p>
+      <p>Some footer text</p>
+    </div>
+    <img src="img/gillescut_300.png" alt="Test Image 2">
   </footer>
 </body>
+
 </html>

@@ -1,11 +1,13 @@
 :root {
-  --primary-color: darkblue;
+  --primary-color: rgb(110, 96, 204);
   --secondary-color: silver;
   --accent-color: deeppink;
+  --ui-color: rgb(78, 205, 196);
   --light-color: #ebeded;
   --dark-color: #555;
   --main-padding: 0.6rem;
-  --content-padding: 0.4rem;
+  --content-padding: 0.6rem;
+  --card-padding: 0.7rem;
 }
 
 * {
@@ -42,10 +44,15 @@ body > header {
   font-size: 1.2rem;
 }
 
+.main-title {
+  text-shadow: 2px 2px 2px var(--accent-color);
+  text-align: center;
+}
+
 body > footer {
   color: var(--light-color);
-  background-color: var(--dark-color);
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.5);
+  background-color: var(--primary-color);
+  box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.6);
 }
 
 body > main {
@@ -54,7 +61,7 @@ body > main {
   margin-bottom: 1rem;
 }
 
-header, footer, main {
+body > header, body > footer, body > main {
   padding: var(--main-padding);
 }
 
@@ -76,10 +83,78 @@ This is a valid block name, though
 }
 
 .content-card {
+  text-align: justify;
   background-color: var(--light-color);
   color: var(--dark-color);
   box-shadow: rgba(0, 0, 0, 0.14) 0px 16px 24px 2px, rgba(0, 0, 0, 0.12) 0px 6px 30px 5px, rgba(0, 0, 0, 0.2) 0px 8px 10px -7px;
   margin: 0 auto;
   width: 98%;
   padding: var(--content-padding);
+  margin-bottom: 2rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta-buttons {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  max-width: 250px;
+  justify-content: center;
+}
+
+.btn {
+  background-color: var(--ui-color);
+  color: var(--dark-color);
+  font-weight: bolder;
+  padding: 0.4rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 2px var(--dark-color);
+}
+
+.cta-buttons__btn {
+  margin-bottom: 0.85rem;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+}
+
+.card-list__title {
+  margin: 0 0 1rem 0;
+  padding: 0 0 1.2rem 0;
+  border-bottom: solid 4px var(--accent-color);
+  font-size: 1.4rem;
+  font-weight: bolder;
+}
+
+.card-list__card {
+  width: 100%;
+  margin-bottom: 1.4rem;
+}
+
+.card {
+  border: 1px solid var(--primary-color);
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+}
+
+.card__header {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  font-size: 1.3rem;
+  padding: var(--card-padding);
+}
+
+.card__body {
+  padding-left: var(--card-padding);
+  padding-right: var(--card-padding);
 }
