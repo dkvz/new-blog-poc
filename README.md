@@ -2,7 +2,10 @@
 
 The entire process should be mobile first this time around. Test with tablet size or smaller.
 
+The `src` folder has the work in progress. I make copies of "checkpoints" as their own directories (e.g. `version0.1`).
+
 ## Fonts
+I started out with sans-serif, have not figured anything out yet but I probably won't use a downloadable font.
 
 ## Colors
   * Teal
@@ -40,12 +43,18 @@ This works alright:
 }
 ```
 
+I like that page: https://en.wikipedia.org/wiki/Web_colors
+
 # TODO
 - [x] Just use BEM for once.
 - [ ] Header shouldn't be fixed this time around but I'm going to do something hybrid and hide-fade + padding transition it out at a certain point. It'll still be fixed if JS is disabled.
   * To try: transparent header into solid into removing it with transition.
-- [ ] Hero has to be much better on the main page.
+- [ ] Hero has to be much better on the main page. I need some kind of image or graphics in it. Something to do with SVG.
+  * Can I use a SVG to create the bottom part and do some kind of cutting-wavy line or something?
+  * Or there's the good old cutting a circle and putting the shrimp in it, on top of the hero.
+  * Solid background color + shrimp cut out in it in SVG (white or dark shrimp - no colors) - Or multiple shrimps. -> That would be cool, I can animate that background.
 - [ ] Header bg should probably be some kind of gradient.
 - [ ] Figure out where to put the menu button, wheel or whatever it's going to be.
 - [ ] The header can have both a home button and the menu icon. Both needs some good hover transitions. Actually it should have a twitter button first. Don't know how much I can fit on mobile.
 - [ ] Can I just take the Teal, darkgrayblue and purple and sort of work with opposite colors from there?
+- [ ] Remember antiquewhite ??
