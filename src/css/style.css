@@ -1,10 +1,11 @@
 :root {
   --primary-color: rgb(110, 96, 204);
-  --secondary-color: silver;
-  --accent-color: deeppink;
+  --accent-color: rgb(219, 48, 105);
   --ui-color: rgb(78, 205, 196);
-  --light-color: #ebeded;
-  --dark-color: #555;
+  --secondary-color: cornsilk;
+  --light-color: #fff;
+  /*--dark-color: #555;*/
+  --dark-color: rgb(68, 68, 68);
   --main-padding: 0.6rem;
   --content-padding: 0.6rem;
   --card-padding: 0.7rem;
@@ -108,7 +109,7 @@ This is a valid block name, though
 
 .btn {
   background-color: var(--ui-color);
-  color: var(--dark-color);
+  color: var(--accent-color);
   font-weight: bolder;
   padding: 0.4rem;
   font-size: 1.1rem;
