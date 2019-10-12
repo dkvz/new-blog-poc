@@ -45,6 +45,11 @@ This works alright:
 
 I like that page: https://en.wikipedia.org/wiki/Web_colors
 
+## Specialized components
+
+### Loader
+A simple stupid rotate could be the base idea for a loader: https://codepen.io/dkvz/pen/LXMaLV
+
 # TODO
 - [x] Just use BEM for once.
 - [ ] Header shouldn't be fixed this time around but I'm going to do something hybrid and hide-fade + padding transition it out at a certain point. It'll still be fixed if JS is disabled.
