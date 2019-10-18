@@ -4,6 +4,9 @@ The entire process should be mobile first this time around. Test with tablet siz
 
 The `src` folder has the work in progress. I make copies of "checkpoints" as their own directories (e.g. `version0.1`).
 
+-> At some point I started using tags (git tags). Here's a list:
+- v1.0 : First draft for colors, missing a lot of stuff and still using purple as primary - Which I think I should change.
+
 ## Fonts
 I started out with sans-serif, have not figured anything out yet but I probably won't use a downloadable font.
 
