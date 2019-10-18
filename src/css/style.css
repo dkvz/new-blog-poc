@@ -36,12 +36,32 @@ body {
   margin: 0;
 }
 
-body > header {
-  color: var(--dark-color);
+.header {
   background-image: url('../img/gilleshead_rotated.png');
   background-position: center right;
   background-size: contain;
   background-repeat: no-repeat;
+  padding: var(--main-padding);
+  position: relative;
+}
+
+.hero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 250px;
+  width: 100%;
+  background-color: var(--dark-color);
+  border-bottom: 4px solid var(--accent-color);
+  z-index: -10;
+}
+
+.header--light {
+  color: var(--light-color);
+}
+
+.header--dark {
+  color: var(--dark-color);
 }
 
 .header__title {
@@ -68,7 +88,7 @@ body > main {
   margin-bottom: 1rem;
 }
 
-body > header, body > footer, body > main {
+body > footer, body > main {
   padding: var(--main-padding);
 }
 
