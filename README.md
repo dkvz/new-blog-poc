@@ -48,6 +48,13 @@ This works alright:
 
 I like that page: https://en.wikipedia.org/wiki/Web_colors
 
+## SVGs in top bar
+I thought of inlining a very compressed version then load the full one and replace the SVG content with it when loaded.
+
+Another plan would be to still use an img tag and use a CSS filter for colors and animations.
+
+However I think I kind of have to use inline for what I want to do.
+
 ## Specialized components
 
 ### Loader
@@ -66,3 +73,4 @@ A simple stupid rotate could be the base idea for a loader: https://codepen.io/d
 - [ ] The header can have both a home button and the menu icon. Both needs some good hover transitions. Actually it should have a twitter button first. Don't know how much I can fit on mobile.
 - [ ] Can I just take the Teal, darkgrayblue and purple and sort of work with opposite colors from there?
 - [ ] Remember antiquewhite ??
+- [ ] Add more drop shadows for the footer, it's got holes at both sides, I think we need 3 shadows.
