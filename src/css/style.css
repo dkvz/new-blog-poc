@@ -69,6 +69,26 @@ body {
   height: 75%;
 }
 
+svg.hero__img  * {
+  stroke: var(--primary-color);
+}
+
+.hero__img--variation-1 {
+  transform: rotate(-14deg) scaleX(-1);
+}
+
+svg.hero__img--variation-1 * {
+  stroke-width: 2px;
+}
+
+.hero__img--variation-2 {
+  transform: rotate(-14deg);
+}
+
+svg.hero__img--variation-2 * {
+  stroke-width: 7px;
+}
+
 .header--light {
   color: var(--light-color);
 }
