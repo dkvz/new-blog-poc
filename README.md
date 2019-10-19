@@ -55,6 +55,28 @@ Another plan would be to still use an img tag and use a CSS filter for colors an
 
 However I think I kind of have to use inline for what I want to do.
 
+### Getting maximum compression
+For Inkscape.
+* Make sure to use File -> Clean up document
+* Select paths that could be simplified and not look too ugly and hit Path -> Simplify
+* Document properties: Set unit to px
+
+To save the SVG, use Save a Copy, pick "Optimized SVG" and use these options (not sure if super optimal but it works):
+* Shorten color values
+* Conver CSS to XML
+* Collapse groups
+* Create groups for similar thingies
+* Work around renderer bugs
+
+* Remove metadata
+* Remove comments
+* Embed raster images (for what that's worth)
+* Enable viewboxing
+
+* Remove unused ids
+* Shorten IDs
+
+
 ## Specialized components
 
 ### Loader
