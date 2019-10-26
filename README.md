@@ -90,6 +90,8 @@ A simple stupid rotate could be the base idea for a loader: https://codepen.io/d
 - [ ] Use CSS-grid (maybe with flex as the fallback) to have a mandatory grid-gap between the shrimps when we resize the width down.
 - [ ] Add an outline on focused buttons. Very important for keyboard nav accessibility.
 - [ ] If I want to do images homemade, there is such a thing as a SVG sprite: https://css-tricks.com/change-color-of-svg-on-hover/#article-header-id-1
+- [ ] Need to test everything on Chrome!
+- [ ] Add a special media query for super giga tiny screens. The CTA could use that one.
 - [ ] Hero has to be much better on the main page. I need some kind of image or graphics in it. Something to do with SVG.
   * Can I use a SVG to create the bottom part and do some kind of cutting-wavy line or something?
   * Or there's the good old cutting a circle and putting the shrimp in it, on top of the hero.

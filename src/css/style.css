@@ -140,6 +140,10 @@ body > footer {
 
 body > main {
   flex: 1;
+  /** Required to display 
+  inline-block elements
+  at the center **/
+  text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -177,7 +181,8 @@ This is a valid block name, though
 }
 
 .cta {
-  margin-top: 110px;
+  margin-top: 90px;
+  width: min-content;
   background-color: rgba(255, 255, 255, 0.82);
 }
 
@@ -269,7 +274,7 @@ This is a valid block name, though
 
 .search__input {
   height: 100%;
-  min-width: 280px;
+  min-width: 250px;
 } 
 
 .input:focus {
