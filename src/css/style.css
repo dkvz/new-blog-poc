@@ -74,19 +74,20 @@ svg.hero__img  * {
 }
 
 .hero__img--variation-1 {
-  transform: rotate(-14deg) scaleX(-1);
-}
-
-svg.hero__img--variation-1 * {
-  stroke-width: 2px;
-}
-
-.hero__img--variation-2 {
   transform: rotate(-14deg);
 }
 
-svg.hero__img--variation-2 * {
+svg.hero__img--variation-1 * {
   stroke-width: 7px;
+}
+
+.hero__img--variation-2 {
+  transform: rotate(-12deg) scaleX(-1);
+}
+
+svg.hero__img--variation-2 * {
+  stroke-width: 2px;
+  fill: transparent;
 }
 
 .header--light {
