@@ -5,7 +5,16 @@ heroImages.forEach((e, i) => {
   fetch(images[i % heroImages.length])
     .then(resp => {
       if (resp.status >= 200 && resp.status < 300) {
-        
+        resp.text().then(
+          data => {
+            const temp = document.createElement('div');
+            temp.innerHTML = data;
+            if (temp.firstElementChild.nodeName === 'svg') {
+              // Duplicate all attributes to the existing SVG.
+              
+            }
+          }
+        );
       }
     });
 });
