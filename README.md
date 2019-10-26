@@ -84,6 +84,7 @@ A simple stupid rotate could be the base idea for a loader: https://codepen.io/d
 
 # TODO
 - [x] Just use BEM for once.
+- [x] Get more hero__img variation classes to get the right stroke-width or fix it using a style attribute.
 - [ ] Header shouldn't be fixed this time around but I'm going to do something hybrid and hide-fade + padding transition it out at a certain point. It'll still be fixed if JS is disabled.
   * To try: transparent header into solid into removing it with transition.
 - [ ] Hero has to be much better on the main page. I need some kind of image or graphics in it. Something to do with SVG.

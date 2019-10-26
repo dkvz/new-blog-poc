@@ -73,20 +73,25 @@ svg.hero__img  * {
   stroke: var(--primary-color);
 }
 
-.hero__img--variation-1 {
+.hero__img--v1 {
   transform: rotate(-14deg);
 }
 
-svg.hero__img--variation-1 * {
+.hero__img--v2 {
+  transform: rotate(-11deg) scaleX(-1);
+}
+
+svg.hero__img--v1 * {
   stroke-width: 7px;
 }
 
-.hero__img--variation-2 {
-  transform: rotate(-12deg) scaleX(-1);
+svg.hero__img--v2 * {
+  stroke-width: 2px;
 }
 
-svg.hero__img--variation-2 * {
-  stroke-width: 2px;
+
+svg.hero__img--v2-loaded * {
+  stroke-width: 3px;
   fill: transparent;
 }
 
