@@ -88,6 +88,7 @@ A simple stupid rotate could be the base idea for a loader: https://codepen.io/d
 - [ ] Header shouldn't be fixed this time around but I'm going to do something hybrid and hide-fade + padding transition it out at a certain point. It'll still be fixed if JS is disabled.
   * To try: transparent header into solid into removing it with transition.
 - [ ] Use CSS-grid (maybe with flex as the fallback) to have a mandatory grid-gap between the shrimps when we resize the width down.
+- [ ] Add an outline on focused buttons. Very important for keyboard nav accessibility.
 - [ ] Hero has to be much better on the main page. I need some kind of image or graphics in it. Something to do with SVG.
   * Can I use a SVG to create the bottom part and do some kind of cutting-wavy line or something?
   * Or there's the good old cutting a circle and putting the shrimp in it, on top of the hero.
