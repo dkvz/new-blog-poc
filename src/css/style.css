@@ -43,6 +43,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   padding: var(--main-padding);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .hero {
@@ -121,8 +123,7 @@ svg.hero__img--v2-loaded * {
 
 .header__title {
   margin: 0;
-  padding-top: var(--main-padding);
-  padding-bottom: var(--main-padding);
+  padding: 0.1rem 0;
   font-size: 1.2rem;
 }
 
@@ -279,4 +280,79 @@ This is a valid block name, though
 
 .input:focus {
   outline: 2px solid var(--accent-color);
+}
+
+.header__menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-btn {
+  font-family: sans-serif;
+  border: none;
+  background-color: transparent;
+  /*padding: 0.3rem 0.5rem;*/
+  color: var(--light-color);
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.menu-btn__icon {
+  height: 26px;
+  padding: 0.2rem;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  margin-left: 0.4rem;
+  border: 2px solid var(--light-color);
+}
+
+.menu-btn span {
+  margin-right: 0.4rem;
+}
+
+.menu-btn__icon rect {
+  transition: opacity .6s, transform .6s;
+  fill: var(--light-color);
+}
+
+.menu-btn.open .menu-btn__icon .line-2 {
+  opacity: 0;
+}
+
+.menu-btn:hover .menu-btn__icon .line-1 {
+  animation: refill 1s infinite;
+}
+
+.menu-btn:hover .menu-btn__icon .line-2 {
+  animation: refill 4s infinite;
+}
+
+.menu-btn:hover .menu-btn__icon .line-3 {
+  animation: refill 1s infinite 0.2s;
+}
+
+.menu-btn.open .menu-btn__icon .line-1 {
+  transform: rotate(45deg) translate(2px, -1px);
+}
+
+.menu-btn.open .menu-btn__icon .line-2 {
+  opacity: 0;
+}
+
+.menu-btn.open .menu-btn__icon .line-3 {
+  transform: rotate(-45deg) translate(-4px, -2px);
+}
+
+@keyframes refill {
+  0%, 100% { fill: #7ccdea; }
+  16%      { fill: #0074d9; }
+  32%      { fill: #2ecc40; }
+  48%      { fill: #ffdc00; }
+  64%      { fill: #b10dc9; }
+  80%      { fill: #ff4136; }
 }

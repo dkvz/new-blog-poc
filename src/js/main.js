@@ -1,4 +1,5 @@
 const heroImages = document.querySelectorAll('.hero__img');
+const menuBtn = document.querySelector('.menu-btn');
 const images = [
   {
     src: 'img/shrimp_plain1.svg'
@@ -38,3 +39,14 @@ function replaceHeroImages() {
 
 // Delay the replacement just to see it in dev mode.
 setTimeout(replaceHeroImages, 3200);
+
+menuBtn.addEventListener('click', (e) => {
+  const span = e.currentTarget.querySelector('span');
+  if (e.currentTarget.classList.contains('open')) {
+    e.currentTarget.classList.remove('open');
+    span.textContent = 'Menu';
+  } else {
+    e.currentTarget.classList.add('open');
+    span.textContent = 'Fermer';
+  }
+})
