@@ -258,6 +258,7 @@ This is a valid block name, though
 .search__img {
   background-color: var(--ui-color);
   padding: 0.2rem 0.8rem;
+  height: 34px;
 }
 
 .input {
