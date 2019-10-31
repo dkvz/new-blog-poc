@@ -282,6 +282,10 @@ This is a valid block name, though
   outline: 2px solid var(--accent-color);
 }
 
+.input::-moz-focus-inner {
+  border: 0;
+}
+
 .header__menu-container {
   display: flex;
   justify-content: center;
@@ -294,7 +298,7 @@ This is a valid block name, though
   background-color: transparent;
   /*padding: 0.3rem 0.5rem;*/
   color: var(--light-color);
-  padding: 0;
+  padding: 0.3rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
