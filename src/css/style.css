@@ -320,6 +320,10 @@ This is a valid block name, though
   text-transform: uppercase;
 }
 
+.header--sticky .menu-btn {
+  color: var(--dark-color);
+}
+
 .menu-btn__icon {
   height: 26px;
   padding: 0.2rem;
@@ -329,6 +333,10 @@ This is a valid block name, though
   border: 2px solid var(--light-color);
 }
 
+.header--sticky .menu-btn__icon {
+  border: 2px solid var(--dark-color);
+}
+
 .menu-btn span {
   margin-right: 0.4rem;
 }
@@ -336,6 +344,10 @@ This is a valid block name, though
 .menu-btn__icon rect {
   transition: opacity .6s, transform .6s;
   fill: var(--light-color);
+}
+
+.header--sticky .menu-btn__icon rect {
+  fill: var(--dark-color);
 }
 
 .menu-btn.open .menu-btn__icon .line-2 {

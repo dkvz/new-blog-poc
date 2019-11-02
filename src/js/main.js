@@ -39,8 +39,8 @@ const dynamicNav = {
         this.el.style.transform = '';
         this.el.classList.remove(this.stickyClass);
         this.sticky = false;
-        this.debug('Removed');
-      }, 500);
+        //this.debug('Removed');
+      }, 400);
     } else if (!this.sticky && 
         window.pageYOffset > this.stickT && 
         window.pageYOffset <= this.hideT) {
@@ -51,7 +51,7 @@ const dynamicNav = {
       setTimeout(() => this.el.style.opacity = 1, 300);
       // --
       this.sticky = true;
-      this.debug('Added');
+      //this.debug('Added');
     }
   }
 };
