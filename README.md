@@ -85,9 +85,10 @@ A simple stupid rotate could be the base idea for a loader: https://codepen.io/d
 # TODO
 - [x] Just use BEM for once.
 - [x] Get more hero__img variation classes to get the right stroke-width or fix it using a style attribute.
+- [ ] Try debouncing the scroll event for the menu thingy.
+- [ ] The menu has to work with Javascript disabled - I'm thinking of using the input checked trick. Plan B would have to have a second menu in a <noscript> tag.
 - [ ] Header shouldn't be fixed this time around but I'm going to do something hybrid and hide-fade + padding transition it out at a certain point. It'll still be fixed if JS is disabled.
   * To try: transparent header into solid into removing it with transition.
-- [ ] Try a big light-colored inner shadow in the header rather than using a gradient (I could use both though).
 - [ ] Use CSS-grid (maybe with flex as the fallback) to have a mandatory grid-gap between the shrimps when we resize the width down.
 - [ ] Add an outline on focused buttons. Very important for keyboard nav accessibility.
 - [ ] If I want to do images homemade, there is such a thing as a SVG sprite: https://css-tricks.com/change-color-of-svg-on-hover/#article-header-id-1
@@ -97,9 +98,7 @@ A simple stupid rotate could be the base idea for a loader: https://codepen.io/d
   * Can I use a SVG to create the bottom part and do some kind of cutting-wavy line or something?
   * Or there's the good old cutting a circle and putting the shrimp in it, on top of the hero.
   * Solid background color + shrimp cut out in it in SVG (white or dark shrimp - no colors) - Or multiple shrimps. -> That would be cool, I can animate that background.
-- [ ] Header bg should probably be some kind of gradient.
 - [ ] Figure out where to put the menu button, wheel or whatever it's going to be.
 - [ ] The header can have both a home button and the menu icon. Both needs some good hover transitions. Actually it should have a twitter button first. Don't know how much I can fit on mobile.
 - [ ] Can I just take the Teal, darkgrayblue and purple and sort of work with opposite colors from there?
-- [ ] Remember antiquewhite ??
 - [ ] Add more drop shadows for the footer, it's got holes at both sides, I think we need 3 shadows.

@@ -47,6 +47,20 @@ body {
   padding: var(--main-padding);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  transition: all .3s ease;
+  color: var(--light-color);
+  transform-origin: top;
+}
+
+.header--sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--light-color);
+  padding: 1.2rem;
+  color: var(--dark-color);
+  z-index: 15;
 }
 
 .hero {
@@ -118,14 +132,6 @@ svg.hero__img--v2 * {
 svg.hero__img--v2-loaded * {
   stroke-width: 3px;
   fill: transparent;
-}
-
-.header--light {
-  color: var(--light-color);
-}
-
-.header--dark {
-  color: var(--dark-color);
 }
 
 .header__title {
@@ -367,3 +373,12 @@ This is a valid block name, though
   64%      { fill: #b10dc9; }
   80%      { fill: #ff4136; }
 }
+
+/* .animate--scale-down {
+  animation: scale-down 0.6s;
+}
+
+@keyframes scale-down {
+  from {transform: scaleX(1)}
+  to {transform: scaleX(0.1)}
+} */

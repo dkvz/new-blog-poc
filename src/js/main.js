@@ -1,5 +1,6 @@
-const heroImages = document.querySelectorAll('.hero__img');
-const menuBtn = document.querySelector('.menu-btn');
+const heroImages = document.querySelectorAll('.hero__img'),
+  menuBtn = document.querySelector('.menu-btn'),
+  header = document.querySelector('.header');
 const images = [
   {
     src: 'img/shrimp_plain1.svg'
@@ -9,6 +10,51 @@ const images = [
     className: 'hero__img--v2-loaded'
   }
 ];
+
+const dynamicNav = {
+  stickyClass: 'header--sticky',
+  sticky: false,
+  init: function(el) {
+    this.el = el;
+    this.stickT = el.getBoundingClientRect ? 
+      el.getBoundingClientRect().height : 150;
+    this.hideT = this.stickT * 4;
+    this.sticky = false;
+    window.addEventListener(
+      'scroll', 
+      this.onScroll.bind(this)
+    );
+  },
+  debug: function(action) {
+    console.log(`hideT = ${this.hideT} - stickT = ${this.stickT}`);
+    console.log(`${action} - Offset: ${window.pageYOffset}`);
+  },
+  onScroll: function() {
+    if (this.sticky && 
+      (window.pageYOffset > this.hideT || 
+        window.pageYOffset <= this.stickT)) {
+      // Hide the menu (reset its position)
+      this.el.style.transform = 'scaleY(0)';
+      setTimeout(() => {
+        this.el.style.transform = '';
+        this.el.classList.remove(this.stickyClass);
+        this.sticky = false;
+        this.debug('Removed');
+      }, 500);
+    } else if (!this.sticky && 
+        window.pageYOffset > this.stickT && 
+        window.pageYOffset <= this.hideT) {
+      // Sticky the menu
+      this.el.classList.add(this.stickyClass);
+      // TODO: I don't know if this is necessary:
+      this.el.style.opacity = 0.4;
+      setTimeout(() => this.el.style.opacity = 1, 300);
+      // --
+      this.sticky = true;
+      this.debug('Added');
+    }
+  }
+};
 
 function replaceHeroImages() {
   heroImages.forEach((e, i) => {
@@ -50,3 +96,5 @@ menuBtn.addEventListener('click', (e) => {
     span.textContent = 'Fermer';
   }
 })
+
+dynamicNav.init(header);
