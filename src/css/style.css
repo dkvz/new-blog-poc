@@ -40,6 +40,10 @@ body {
 }
 
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-image: url('../img/gilleshead_rotated.png');
   background-position: center right;
   background-size: contain;
@@ -54,9 +58,6 @@ body {
 
 .header--sticky {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   background-color: var(--light-color);
   padding: 1.2rem;
   color: var(--dark-color);
@@ -195,7 +196,7 @@ This is a valid block name, though
 }
 
 .cta {
-  margin-top: 90px;
+  margin-top: 145px;
   width: min-content;
   background-color: rgba(255, 255, 255, 0.82);
 }
