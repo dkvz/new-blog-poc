@@ -14,6 +14,7 @@ const images = [
 const dynamicNav = {
   stickyClass: 'header--sticky',
   sticky: false,
+  waiting: false,
   init: function(el) {
     this.el = el;
     this.stickT = el.getBoundingClientRect ? 
@@ -30,6 +31,7 @@ const dynamicNav = {
     console.log(`${action} - Offset: ${window.pageYOffset}`);
   },
   onScroll: function() {
+    if (this.waiting) return;
     if (this.sticky && 
       (window.pageYOffset > this.hideT || 
         window.pageYOffset <= this.stickT)) {
@@ -53,6 +55,9 @@ const dynamicNav = {
       this.sticky = true;
       //this.debug('Added');
     }
+    this.waiting = true;
+    // My attempt to debounce this event.
+    setTimeout(() => this.waiting = false, 200);
   }
 };
 
@@ -84,7 +89,7 @@ function replaceHeroImages() {
 }
 
 // Delay the replacement just to see it in dev mode.
-setTimeout(replaceHeroImages, 3200);
+setTimeout(replaceHeroImages, 3000);
 
 menuBtn.addEventListener('click', (e) => {
   const span = e.currentTarget.querySelector('span');

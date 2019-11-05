@@ -82,13 +82,28 @@ To save the SVG, use Save a Copy, pick "Optimized SVG" and use these options (no
 ### Loader
 A simple stupid rotate could be the base idea for a loader: https://codepen.io/dkvz/pen/LXMaLV
 
+### Cards
+I could copy the cards from:
+* http://materialdesignblog.com/10-material-design-cards-for-web-in-css-html/
+* https://www.w3schools.com/w3css/w3css_cards.asp
+
+This codepen has a cool floating date pill:
+https://codepen.io/andytran/pen/BNjymy
+
+The hover that reveals the description would've been cool except hover is not a thing on mobile so I'm not doing that.
+
+
+
 # TODO
 - [x] Just use BEM for once.
 - [x] Get more hero__img variation classes to get the right stroke-width or fix it using a style attribute.
-- [ ] Try debouncing the scroll event for the menu thingy.
+- [x] Try debouncing the scroll event for the menu thingy.
+- [ ] Hover on cards with images on top: can try animating the background zooming and moving slightly.
+  * Use use a hover animation such as the one here: https://beautifuldingbats.com
+- [ ] Cards normally have a "bubble" animation on click. Same for buttons.
+- [ ] We could have the last shorts in a section that can be expanded to see more, same for articles. Of course, expanding should be animated. That way we could only have a few "last shorts" and "last articles". The expansion thing can be mounted as a (or part of a) component so that it's not visible when JS is disabled. The first few items shown are also server rendered when necessary.
 - [ ] The menu has to work with Javascript disabled - I'm thinking of using the input checked trick. Plan B would have to have a second menu in a <noscript> tag.
-- [ ] Header shouldn't be fixed this time around but I'm going to do something hybrid and hide-fade + padding transition it out at a certain point. It'll still be fixed if JS is disabled.
-  * To try: transparent header into solid into removing it with transition.
+- [x]  Header shouldn't be fixed this time around but I'm going to do something hybrid and hide-fade + padding transition it out at a certain point. It'll still be fixed if JS is disabled. Currently trying: transparent header into solid into removing it with transition.
 - [ ] Use CSS-grid (maybe with flex as the fallback) to have a mandatory grid-gap between the shrimps when we resize the width down.
 - [ ] Add an outline on focused buttons. Very important for keyboard nav accessibility.
 - [ ] If I want to do images homemade, there is such a thing as a SVG sprite: https://css-tricks.com/change-color-of-svg-on-hover/#article-header-id-1
@@ -98,7 +113,6 @@ A simple stupid rotate could be the base idea for a loader: https://codepen.io/d
   * Can I use a SVG to create the bottom part and do some kind of cutting-wavy line or something?
   * Or there's the good old cutting a circle and putting the shrimp in it, on top of the hero.
   * Solid background color + shrimp cut out in it in SVG (white or dark shrimp - no colors) - Or multiple shrimps. -> That would be cool, I can animate that background.
-- [ ] Figure out where to put the menu button, wheel or whatever it's going to be.
+- [x] Figure out where to put the menu button, wheel or whatever it's going to be.
 - [ ] The header can have both a home button and the menu icon. Both needs some good hover transitions. Actually it should have a twitter button first. Don't know how much I can fit on mobile.
-- [ ] Can I just take the Teal, darkgrayblue and purple and sort of work with opposite colors from there?
 - [ ] Add more drop shadows for the footer, it's got holes at both sides, I think we need 3 shadows.
