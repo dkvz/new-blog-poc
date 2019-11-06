@@ -98,6 +98,7 @@ The hover that reveals the description would've been cool except hover is not a 
 - [x] Just use BEM for once.
 - [x] Get more hero__img variation classes to get the right stroke-width or fix it using a style attribute.
 - [x] Try debouncing the scroll event for the menu thingy.
+- [ ] The button style here is kinda nice (ignore that it's about cards): https://codepen.io/candroo/pen/wKEwRL
 - [ ] Hover on cards with images on top: can try animating the background zooming and moving slightly.
   * Use use a hover animation such as the one here: https://beautifuldingbats.com
 - [ ] Cards normally have a "bubble" animation on click. Same for buttons.

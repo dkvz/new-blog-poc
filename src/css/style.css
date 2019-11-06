@@ -224,9 +224,9 @@ This is a valid block name, though
   box-shadow: var(--ui-shadow);
 }
 
-.cta-buttons__btn {
+/*.cta-buttons__btn {
   
-}
+}*/
 
 .card-list {
   display: flex;
