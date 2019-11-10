@@ -92,7 +92,7 @@ https://codepen.io/andytran/pen/BNjymy
 
 The hover that reveals the description would've been cool except hover is not a thing on mobile so I'm not doing that.
 
-
+I'm currently thinking of having a huge outline on cards too. There's a todo item to put it on the links at the card bottom, I'll probably start with that.
 
 # TODO
 - [x] Just use BEM for once.
@@ -107,6 +107,7 @@ The hover that reveals the description would've been cool except hover is not a 
 - [x]  Header shouldn't be fixed this time around but I'm going to do something hybrid and hide-fade + padding transition it out at a certain point. It'll still be fixed if JS is disabled. Currently trying: transparent header into solid into removing it with transition.
 - [ ] Use CSS-grid (maybe with flex as the fallback) to have a mandatory grid-gap between the shrimps when we resize the width down.
 - [ ] Add an outline on focused buttons. Very important for keyboard nav accessibility.
+- [ ] Also put a big outline (similar to the button one) on links - Escpecially the card links at the bottom.
 - [ ] If I want to do images homemade, there is such a thing as a SVG sprite: https://css-tricks.com/change-color-of-svg-on-hover/#article-header-id-1
 - [ ] Need to test everything on Chrome!
 - [ ] Add a special media query for super giga tiny screens. The CTA could use that one.
