@@ -1,6 +1,7 @@
 :root {
   --primary-color: rgb(110, 96, 204);
   --accent-color: rgb(219, 48, 105);
+  --accent-color-lighter: rgba(219, 48, 105, 0.7);
   --ui-color: rgb(78, 205, 196);
   --secondary-color: #edebed;
   --light-color: #fff;
@@ -228,42 +229,122 @@ This is a valid block name, though
   
 }*/
 
-.card-list {
+/*.card-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 1.2rem;
+}*/
+
+.card-list {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
-.card-list__title {
-  margin: 0 0 1rem 0;
+.section-title {
+  text-align: center;
+  margin: 1.2rem 0 0.8rem 0;
+}
+
+.section-title__title {
+  display: inline-block;
+  margin: 0 auto;
   padding: 0 0 1.2rem 0;
   border-bottom: solid 4px var(--accent-color);
   font-size: 1.4rem;
   font-weight: bolder;
 }
 
-.card-list__card {
-  width: 100%;
-  margin-bottom: 1.4rem;
-}
-
 .card {
-  border: 1px solid var(--primary-color);
-  box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;
+  position: relative;
+  background-color: var(--light-color);
+  /*border: 1px solid var(--secondary-color);*/
+  /*box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 3px 1px -2px, rgba(0, 0, 0, 0.2) 0px 1px 5px 0px;*/
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, .2);
+  /* A very subtle border
+     radius just makes things 
+      better */
+  border-radius: 2px;
+  /** Flex is only needed if we want to use a grid as the parent 
+  Unless we tell that grid to not stretch things I guess **/
+  display: flex;
+  flex-direction: column;
 }
 
 .card__header {
-  background-color: var(--primary-color);
+  overflow: hidden;
+}
+
+.card__date-pill {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 100%;
+  background-color: var(--accent-color);
   color: var(--light-color);
-  font-size: 1.3rem;
-  padding: var(--card-padding);
+  padding: 0.9rem;
+  word-break: break-all;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card--hoverable {
+  transition: box-shadow .25s;
+}
+
+.card--hoverable:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
+}
+
+.card--hoverable:hover .card__header img {
+  transform: scale(1.04);
+  opacity: 0.8;
 }
 
 .card__body {
-  padding-left: var(--card-padding);
-  padding-right: var(--card-padding);
+  flex: 1;
+  padding: var(--card-padding);
+  text-align: justify;
+}
+
+.card__header img {
+  width: 100%;
+  transition: opacity 0.2s, transform 0.3s;
+}
+
+.card__body h1 {
+  margin: 0;
+  font-size: 1.3rem;
+  
+}
+
+.card__footer {
+  padding: 1.2rem var(--card-padding);
+  border-top: 1px solid rgba(150,150,150,0.35);
+}
+
+.card__footer a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.82rem;
+  color: var(--accent-color);
+}
+
+.card__footer a:hover {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--accent-color-lighter);
 }
 
 .search {
