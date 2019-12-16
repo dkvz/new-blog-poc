@@ -76,6 +76,19 @@ To save the SVG, use Save a Copy, pick "Optimized SVG" and use these options (no
 * Remove unused ids
 * Shorten IDs
 
+## Original button style
+```css
+.btn {
+  background-color: var(--ui-color);
+  color: var(--accent-color);
+  font-weight: bolder;
+  padding: 0.4rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: none;
+  box-shadow: var(--ui-shadow);
+}
+```
 
 ## Specialized components
 
@@ -98,16 +111,14 @@ I'm currently thinking of having a huge outline on cards too. There's a todo ite
 - [x] Just use BEM for once.
 - [x] Get more hero__img variation classes to get the right stroke-width or fix it using a style attribute.
 - [x] Try debouncing the scroll event for the menu thingy.
-- [ ] Sometimes when you scroll up after the menu got stickied, it doesn't roll back to non stickied. Maybe because we should do it before reaching a scroll of 0?
-- [ ] The button style here is kinda nice (ignore that it's about cards): https://codepen.io/candroo/pen/wKEwRL
-- [ ] Hover on cards with images on top: can try animating the background zooming and moving slightly.
+- [x] Hover on cards with images on top: can try animating the background zooming and moving slightly.
   * Use use a hover animation such as the one here: https://beautifuldingbats.com
 - [ ] Cards normally have a "bubble" animation on click. Same for buttons.
 - [ ] We could have the last shorts in a section that can be expanded to see more, same for articles. Of course, expanding should be animated. That way we could only have a few "last shorts" and "last articles". The expansion thing can be mounted as a (or part of a) component so that it's not visible when JS is disabled. The first few items shown are also server rendered when necessary.
 - [ ] The menu has to work with Javascript disabled - I'm thinking of using the input checked trick. Plan B would have to have a second menu in a <noscript> tag.
-- [x]  Header shouldn't be fixed this time around but I'm going to do something hybrid and hide-fade + padding transition it out at a certain point. It'll still be fixed if JS is disabled. Currently trying: transparent header into solid into removing it with transition.
+- [x] Header shouldn't be fixed this time around but I'm going to do something hybrid and hide-fade + padding transition it out at a certain point. It'll still be fixed if JS is disabled. Currently trying: transparent header into solid into removing it with transition.
 - [ ] Use CSS-grid (maybe with flex as the fallback) to have a mandatory grid-gap between the shrimps when we resize the width down.
-- [ ] Add an outline on focused buttons. Very important for keyboard nav accessibility.
+- [x] Add an outline on focused buttons. Very important for keyboard nav accessibility.
 - [ ] Also put a big outline (similar to the button one) on links - Escpecially the card links at the bottom.
 - [ ] If I want to do images homemade, there is such a thing as a SVG sprite: https://css-tricks.com/change-color-of-svg-on-hover/#article-header-id-1
 - [ ] Need to test everything on Chrome!
@@ -118,4 +129,5 @@ I'm currently thinking of having a huge outline on cards too. There's a todo ite
   * Solid background color + shrimp cut out in it in SVG (white or dark shrimp - no colors) - Or multiple shrimps. -> That would be cool, I can animate that background.
 - [x] Figure out where to put the menu button, wheel or whatever it's going to be.
 - [ ] The header can have both a home button and the menu icon. Both needs some good hover transitions. Actually it should have a twitter button first. Don't know how much I can fit on mobile.
+  - [x] Home button will be the header title
 - [ ] Add more drop shadows for the footer, it's got holes at both sides, I think we need 3 shadows.
