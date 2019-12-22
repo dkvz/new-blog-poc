@@ -370,6 +370,10 @@ This is a valid block name, though
 }
 
 .search {
+  display: flex;
+}
+
+.search__label {
   width: 100%;
   border: 3px solid var(--ui-color);
   padding: 0;
@@ -393,6 +397,7 @@ This is a valid block name, though
 .search__input {
   height: 100%;
   min-width: 250px;
+  flex: 1;
 } 
 
 .input:focus {
