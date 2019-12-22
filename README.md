@@ -113,6 +113,7 @@ I'm currently thinking of having a huge outline on cards too. There's a todo ite
 - [x] Try debouncing the scroll event for the menu thingy.
 - [x] Hover on cards with images on top: can try animating the background zooming and moving slightly.
   * Use use a hover animation such as the one here: https://beautifuldingbats.com
+- [ ] Padding for the search input is almost non-existent.
 - [ ] Cards normally have a "bubble" animation on click. Same for buttons.
 - [ ] We could have the last shorts in a section that can be expanded to see more, same for articles. Of course, expanding should be animated. That way we could only have a few "last shorts" and "last articles". The expansion thing can be mounted as a (or part of a) component so that it's not visible when JS is disabled. The first few items shown are also server rendered when necessary.
 - [ ] The menu has to work with Javascript disabled - I'm thinking of using the input checked trick. Plan B would have to have a second menu in a <noscript> tag.

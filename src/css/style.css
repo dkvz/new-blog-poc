@@ -485,6 +485,10 @@ This is a valid block name, though
   transform: rotate(-45deg) translate(-4px, -2px);
 }
 
+.card-list__btn {
+  grid-column: span 2;
+}
+
 @keyframes refill {
   0%, 100% { fill: #7ccdea; }
   16%      { fill: #0074d9; }
