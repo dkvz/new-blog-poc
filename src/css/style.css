@@ -371,7 +371,7 @@ This is a valid block name, though
 
 .search {
   display: flex;
-  min-width: 260px;
+  width: 300px;
 }
 
 .search__label {
@@ -487,6 +487,7 @@ This is a valid block name, though
 
 .card-list__btn {
   grid-column: span 2;
+  background-color: var(--secondary-color);
 }
 
 @keyframes refill {
