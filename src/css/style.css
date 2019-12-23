@@ -264,9 +264,12 @@ This is a valid block name, though
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
-  flex-wrap: wrap;
   max-width: 980px;
   margin: 0 auto;
+}
+
+.card-list--single {
+  grid-template-columns: 1fr;
 }
 
 .section-title {
@@ -488,6 +491,10 @@ This is a valid block name, though
 .card-list__btn {
   grid-column: span 2;
   background-color: var(--secondary-color);
+}
+
+.card-list--single .card-list__btn {
+  grid-column: initial;
 }
 
 @keyframes refill {
