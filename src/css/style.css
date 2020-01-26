@@ -305,8 +305,9 @@ This is a valid block name, though
 .card__header {
   overflow: hidden;
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 .card__date-pill {
@@ -352,7 +353,9 @@ This is a valid block name, though
 }
 
 .card__img {
-  align-self: flex-start;
+  border-radius: 50%;
+  margin: 1rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .6);
 }
 
 .card__header h1 {
@@ -365,9 +368,12 @@ This is a valid block name, though
   font-size: 1.3rem;
 }
 
+.card--border-top, .card__footer {
+  border-top: 1px solid rgba(150,150,150,0.35);
+}
+
 .card__footer {
   padding: 1.2rem var(--card-padding);
-  border-top: 1px solid rgba(150,150,150,0.35);
 }
 
 .card__footer a {
@@ -525,3 +531,13 @@ This is a valid block name, though
   from {transform: scaleX(1)}
   to {transform: scaleX(0.1)}
 } */
+
+@media(min-width: 620px) {
+
+  .card__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+}

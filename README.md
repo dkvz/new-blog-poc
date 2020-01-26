@@ -108,6 +108,10 @@ The hover that reveals the description would've been cool except hover is not a 
 I'm currently thinking of having a huge outline on cards too. There's a todo item to put it on the links at the card bottom, I'll probably start with that.
 
 # TODO
+- [ ] I need the date, read more, and comment icons.
+- [ ] Article title color is wrong. Another font would also be nice for it.
+- [ ] Add a hover animation for the small image for article cards: rolling slightly left then right (rotation + translate).
+- [ ] The controls to read more or go to comments for article cards should probably be links instead of buttons. I think.
 - [x] Just use BEM for once.
 - [x] Get more hero__img variation classes to get the right stroke-width or fix it using a style attribute.
 - [x] Try debouncing the scroll event for the menu thingy.

@@ -19,7 +19,7 @@ const dynamicNav = {
     this.el = el;
     this.stickT = el.getBoundingClientRect ? 
       el.getBoundingClientRect().height : 150;
-    this.hideT = this.stickT * 4;
+    this.hideT = this.stickT * 6;
     this.sticky = false;
     window.addEventListener(
       'scroll', 
