@@ -304,6 +304,9 @@ This is a valid block name, though
 
 .card__header {
   overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 .card__date-pill {
@@ -332,7 +335,7 @@ This is a valid block name, though
   box-shadow: 0 8px 17px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19);
 }
 
-.card--hoverable:hover .card__header img {
+.card--hoverable:hover .card__large-img {
   transform: scale(1.04);
   opacity: 0.8;
 }
@@ -343,15 +346,23 @@ This is a valid block name, though
   text-align: justify;
 }
 
-.card__header img {
+.card__large-img {
   width: 100%;
   transition: opacity 0.2s, transform 0.3s;
+}
+
+.card__img {
+  align-self: flex-start;
+}
+
+.card__header h1 {
+  padding: var(--card-padding);
+  margin: 0.5rem 0;
 }
 
 .card__body h1 {
   margin: 0;
   font-size: 1.3rem;
-  
 }
 
 .card__footer {
