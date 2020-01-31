@@ -514,6 +514,10 @@ This is a valid block name, though
   grid-column: initial;
 }
 
+.icon {
+  height: 20px;
+}
+
 @keyframes refill {
   0%, 100% { fill: #7ccdea; }
   16%      { fill: #0074d9; }
