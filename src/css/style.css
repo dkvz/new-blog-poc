@@ -356,11 +356,13 @@ This is a valid block name, though
   border-radius: 50%;
   margin: 1rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .6);
+  height: 110px;
 }
 
 .card__header h1 {
   padding: var(--card-padding);
-  margin: 0.5rem 0;
+  margin: 0;
+  margin-top: 0.3rem;
 }
 
 .card__body h1 {
@@ -387,6 +389,14 @@ This is a valid block name, though
   text-transform: uppercase;
   text-decoration: none;
   color: var(--accent-color-lighter);
+}
+
+.card__info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column-gap: 0.6rem;
+  padding: var(--card-padding);
+  margin-bottom: 0.6rem;
 }
 
 .search {
