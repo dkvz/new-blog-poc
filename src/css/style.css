@@ -198,6 +198,7 @@ This is a valid block name, though
   width: 98%;
   padding: var(--content-padding);
   margin-bottom: 2rem;
+  max-width: 1000px;
 }
 
 .content-card--transp {
@@ -212,6 +213,32 @@ This is a valid block name, though
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: var(--light-color);
+}
+
+.footer-sections {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+}
+
+.footer-sections p {
+  color: var(--light-color);
 }
 
 .cta-buttons {
@@ -422,6 +449,7 @@ This is a valid block name, though
 
 .card__info > div {
   padding: var(--card-padding);
+  color: var(--primary-color);
   /*border-top: 4px solid var(--accent-color);*/
 }
 
@@ -590,6 +618,18 @@ This is a valid block name, though
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+  }
+
+  .footer-sections {
+    flex-direction: row;
+    align-self: stretch;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .footer-sections > section {
+    margin-right: 2rem;
+    max-width: 350px;
   }
 
 }
