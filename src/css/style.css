@@ -200,10 +200,13 @@ This is a valid block name, though
   margin-bottom: 2rem;
 }
 
+.content-card--transp {
+  background-color: rgba(255, 255, 255, 0.82);
+}
+
 .cta {
   margin-top: 145px;
   width: min-content;
-  background-color: rgba(255, 255, 255, 0.82);
 }
 
 .footer {
@@ -270,6 +273,7 @@ This is a valid block name, though
 
 .card-list--single {
   grid-template-columns: 1fr;
+  grid-row-gap: 2.5rem;
 }
 
 .section-title {
@@ -346,6 +350,7 @@ This is a valid block name, though
   flex: 1;
   padding: var(--card-padding);
   text-align: justify;
+  /*box-shadow: inset 0px 0px 2px rgba(0, 0, 0, .5);*/
 }
 
 .card__large-img {
@@ -393,11 +398,14 @@ This is a valid block name, though
 }
 
 .card__info {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-column-gap: 0.6rem;
-  padding: var(--card-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 0.6rem;
+}
+
+.card__info > div {
+  padding: var(--card-padding);
 }
 
 .search {
@@ -526,6 +534,7 @@ This is a valid block name, though
 }
 
 .icon {
+  vertical-align: middle;
   height: 20px;
 }
 
