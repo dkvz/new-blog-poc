@@ -108,7 +108,9 @@ The hover that reveals the description would've been cool except hover is not a 
 I'm currently thinking of having a huge outline on cards too. There's a todo item to put it on the links at the card bottom, I'll probably start with that.
 
 # TODO
-- [ ] I can do the good old effect where the article round image sticks out from the top.
+- [ ] Main hero title size has to be smaller on small screens.
+- [ ] The shrimps need to be constrained to the "container size" and/or I really need to add more of them for larger screens.
+- [x] I can do the good old effect where the article round image sticks out from the top.
 - [x] I need the date, read more, and comment icons.
 - [ ] Article title color is wrong. Another font would also be nice for it.
 - [ ] Ajouter une icone pour le lien flux RSS du footer, pour bien faire faudrait le mettre en orange aussi.
