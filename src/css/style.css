@@ -305,6 +305,7 @@ This is a valid block name, though
 .card__header {
   overflow: hidden;
   display: flex;
+  text-align: initial;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
