@@ -111,14 +111,13 @@ I'm currently thinking of having a huge outline on cards too. There's a todo ite
 - [ ] I can do the good old effect where the article round image sticks out from the top.
 - [x] I need the date, read more, and comment icons.
 - [ ] Article title color is wrong. Another font would also be nice for it.
-- [ ] Add a hover animation for the small image for article cards: rolling slightly left then right (rotation + translate).
 - [ ] The controls to read more or go to comments for article cards should probably be links instead of buttons. I think.
 - [x] Just use BEM for once.
 - [x] Get more hero__img variation classes to get the right stroke-width or fix it using a style attribute.
-- [x] Try debouncing the scroll event for the menu thingy.
+- [ ] I removed the debouncing for the scroll event, but we could just make an extra check in the setTimeout callback to possibly reset the sticky status.
 - [x] Hover on cards with images on top: can try animating the background zooming and moving slightly.
   * Use use a hover animation such as the one here: https://beautifuldingbats.com
-- [ ] Padding for the search input is almost non-existent.
+- [ ] Search input could have bigger text and more padding.
 - [ ] Cards normally have a "bubble" animation on click. Same for buttons.
 - [ ] We could have the last shorts in a section that can be expanded to see more, same for articles. Of course, expanding should be animated. That way we could only have a few "last shorts" and "last articles". The expansion thing can be mounted as a (or part of a) component so that it's not visible when JS is disabled. The first few items shown are also server rendered when necessary.
 - [ ] The menu has to work with Javascript disabled - I'm thinking of using the input checked trick. Plan B would have to have a second menu in a <noscript> tag.

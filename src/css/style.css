@@ -374,6 +374,16 @@ This is a valid block name, though
   padding: var(--card-padding);
   margin: 0;
   margin-top: 0.3rem;
+  font-size: 1.6rem;
+}
+
+.card__header h1::after {
+  display: block;
+  margin-top: 1rem;
+  height: 6px;
+  width: 65px;
+  background-color: var(--accent-color);
+  content: '';
 }
 
 .card__body h1 {
@@ -406,11 +416,13 @@ This is a valid block name, though
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
   margin-bottom: 0.6rem;
 }
 
 .card__info > div {
   padding: var(--card-padding);
+  /*border-top: 4px solid var(--accent-color);*/
 }
 
 .search {

@@ -31,7 +31,7 @@ const dynamicNav = {
     console.log(`${action} - Offset: ${window.pageYOffset}`);
   },
   onScroll: function() {
-    if (this.waiting) return;
+    //if (this.waiting) return;
     if (this.sticky && 
       (window.pageYOffset > this.hideT || 
         window.pageYOffset <= this.stickT)) {
@@ -55,9 +55,9 @@ const dynamicNav = {
       this.sticky = true;
       //this.debug('Added');
     }
-    this.waiting = true;
+    //this.waiting = true;
     // My attempt to debounce this event.
-    setTimeout(() => this.waiting = false, 200);
+    //setTimeout(() => this.waiting = false, 200);
   }
 };
 
