@@ -103,3 +103,6 @@ menuBtn.addEventListener('click', (e) => {
 })
 
 dynamicNav.init(header);
+
+// For debug:
+window.dynamicNav = dynamicNav;

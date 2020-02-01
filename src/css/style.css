@@ -273,7 +273,6 @@ This is a valid block name, though
 
 .card-list--single {
   grid-template-columns: 1fr;
-  grid-row-gap: 2.5rem;
 }
 
 .section-title {
@@ -346,6 +345,10 @@ This is a valid block name, though
   opacity: 0.8;
 }
 
+.card--no-overflow {
+  overflow: visible;
+}
+
 .card__body {
   flex: 1;
   padding: var(--card-padding);
@@ -361,8 +364,10 @@ This is a valid block name, though
 .card__img {
   border-radius: 50%;
   margin: 1rem;
+  margin-top: -30px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .6);
   height: 110px;
+  background: var(--light-color);
 }
 
 .card__header h1 {
@@ -533,9 +538,20 @@ This is a valid block name, though
   grid-column: initial;
 }
 
+.card-list--single .card {
+  margin-top: 2rem;
+}
+
 .icon {
   vertical-align: middle;
   height: 20px;
+}
+
+.quote-card {
+  padding: 1rem;
+  font-style: italic;
+  color: var(--secondary-color);
+  background-color: var(--dark-color);
 }
 
 @keyframes refill {
