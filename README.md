@@ -107,6 +107,15 @@ The hover that reveals the description would've been cool except hover is not a 
 
 I'm currently thinking of having a huge outline on cards too. There's a todo item to put it on the links at the card bottom, I'll probably start with that.
 
+### Menu
+I thought I'd use a big modal triggered by a checkbox triggered by a label so that it sort of works without JS.
+
+See this gist: https://gist.github.com/dkvz/964e76375e80c466e37c85b9bb5bc081
+
+We can even have multiple labels for the same checkbox, as far as I know it's allowed.
+
+The div with class header__menu-container has to become the label. It needs a sibling that's position fixed, we could use left right top and bottom set to 0, it seems that this makes it take the whole screen.
+
 # TODO
 - [ ] Main hero title size has to be smaller on small screens.
 - [ ] The shrimps need to be constrained to the "container size" and/or I really need to add more of them for larger screens.
