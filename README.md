@@ -116,7 +116,15 @@ We can even have multiple labels for the same checkbox, as far as I know it's al
 
 The div with class header__menu-container has to become the label. It needs a sibling that's position fixed, we could use left right top and bottom set to 0, it seems that this makes it take the whole screen.
 
+### Display woes
+Transitions do not like `display: none`. To use it with transition I need some JS and setTimeout magic. The problem is to layer that on top of it working with JS disabled using the checkbox, and the checkbox uses display. So ideally... I'd have to remove the checkbox and its reference in the label if JS is enabled, which is kind of ugly.
+
+**Change of plan**: I could use visibility instead of display so that the nav is actually visible to screen reader. I just have to make sure the animation is not running while it's hidden and we should be fine in terms of CPU.
+
+In that case I can probably hack something together with a transition delay on visibility.
+
 # TODO
+- [ ] Opening the menu has to activate a global body overlay with JS. I'm going to use an attribute on body as I've already done in other projects.
 - [ ] Main hero title size has to be smaller on small screens.
 - [ ] The shrimps need to be constrained to the "container size" and/or I really need to add more of them for larger screens.
 - [x] I can do the good old effect where the article round image sticks out from the top.

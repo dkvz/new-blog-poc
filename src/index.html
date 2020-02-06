@@ -11,7 +11,7 @@
 <body class="bg--gradient">
   <aside class="header">
     <a class="header__title" href="/">Le BdGC <span class="text text--smaller">de DkVZ</span></a>
-    <label class="menu-btn input" tabindex="0">
+    <label class="menu-btn input" tabindex="0" role="button" aria-controls="menu" aria-label="Afficher le menu" for="menu-checkbox">
       <svg class="menu-btn__icon" viewBox="0 0 7 7">
         <rect class="line-1" y="0" width="7" height="1"></rect>
         <rect class="line-2" y="3" width="7" height="1"></rect>
@@ -19,6 +19,18 @@
       </svg>
       <span>Menu</span>
     </label>
+    <input aria-hidden="true" type="checkbox" id="menu-checkbox" name="menu-checkbox">
+    <nav id="menu">
+      <div class="menu">
+        <h1>Menu</h1>
+        <ul>
+          <li>Accueil</li>
+          <li>Blog</li>
+          <li>Contact</li>
+          <li>About us</li>
+        </ul>
+      </div>
+    </nav>
   </aside>
   <header class="hero">
     <div class="hero__inner">
