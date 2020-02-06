@@ -49,13 +49,15 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  /* Had to fix the height for the menu */
+  height: 60px;
   background-image: url('../img/gilleshead_rotated.png');
   background-position: center right;
   background-size: contain;
   background-repeat: no-repeat;
   padding: var(--main-padding);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr auto 1fr;
   transition: all .3s ease;
   color: var(--light-color);
   transform-origin: top;
@@ -63,6 +65,7 @@ body {
 
 .header--sticky {
   position: fixed;
+  height: initial;
   background-color: var(--light-color);
   padding: 1.2rem;
   color: var(--dark-color);
@@ -499,12 +502,6 @@ This is a valid block name, though
 
 .input::-moz-focus-inner {
   border: 0;
-}
-
-.header__menu-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .menu-btn {
