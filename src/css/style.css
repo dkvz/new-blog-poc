@@ -90,15 +90,17 @@ body {
   background-color: var(--dark-color);
   background-image: linear-gradient(var(--dark-color), var(--secondary-color));
   background-image: url('../img/pat_shrimp.png'), linear-gradient(var(--dark-color), var(--secondary-color));
-  animation: gradient 12s 1s ease infinite;
-  transition: transform 0.6s;
-  transform: scaleY(1);
+  transition: visibility 0s linear 0.6s, transform 0.6s;
+  transform: scaleY(0);
   transform-origin: top center;
-  display: none;
+  visibility: hidden;
 }
 
 #menu-checkbox:checked~nav {
-  display: block;
+  visibility: visible;
+  transform: scaleY(1);
+  animation: gradient 12s 1s ease infinite;
+  transition: transform 0.6s;
 }
 
 .menu {
@@ -542,6 +544,7 @@ This is a valid block name, though
 }
 
 .menu-btn {
+  cursor: pointer;
   font-family: var(--main-font);
   border: none;
   background-color: transparent;

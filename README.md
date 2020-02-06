@@ -123,6 +123,9 @@ Transitions do not like `display: none`. To use it with transition I need some J
 
 In that case I can probably hack something together with a transition delay on visibility.
 
+- Change the background color to be similar to the header one
+- The JS that changes MENU to CLOSE should be bound the the checkbox
+
 # TODO
 - [ ] Opening the menu has to activate a global body overlay with JS. I'm going to use an attribute on body as I've already done in other projects.
 - [ ] Main hero title size has to be smaller on small screens.
