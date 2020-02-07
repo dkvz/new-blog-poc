@@ -44,6 +44,23 @@ body {
   overflow-x: hidden;
 }
 
+body[data-overlay]:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 12;
+  background-color: #000;
+  background-color: rgba(0,0,0,0.5);
+}
+
+body[data-overlay] {
+  overflow: hidden;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -462,7 +479,7 @@ This is a valid block name, though
   height: 6px;
   width: 65px;
   background-color: var(--accent-color);
-  content: '';
+  content: "";
 }
 
 .card__body h1 {

@@ -1,5 +1,6 @@
 const heroImages = document.querySelectorAll('.hero__img'),
   menuBtn = document.querySelector('.menu-btn'),
+  menuCheckbox = document.getElementById('menu-checkbox'),
   header = document.querySelector('.header');
 const images = [
   {
@@ -89,15 +90,19 @@ function replaceHeroImages() {
 }
 
 // Delay the replacement just to see it in dev mode.
-setTimeout(replaceHeroImages, 3000);
+setTimeout(replaceHeroImages, 1500);
 
-menuBtn.addEventListener('click', (e) => {
-  const span = e.currentTarget.querySelector('span');
+menuCheckbox.addEventListener('change', (e) => {
+  const span = menuBtn.querySelector('span');
   if (e.currentTarget.classList.contains('open')) {
     e.currentTarget.classList.remove('open');
+    document.body.removeAttribute('data-overlay');
+    menuBtn.style.zIndex = 20;
     span.textContent = 'Menu';
   } else {
     e.currentTarget.classList.add('open');
+    menuBtn.style.zIndex = 20;
+    document.body.setAttribute('data-overlay', true);
     span.textContent = 'Fermer';
   }
 })
