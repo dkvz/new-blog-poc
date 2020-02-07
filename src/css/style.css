@@ -16,6 +16,7 @@
   --text-shadow-2: 0px 0px 6px var(--accent-color);
   --main-font: sans-serif;
   --container-width: 1000px;
+  --hero-inset-shadow: inset 0px 0px 60px 10px rgba(0, 0, 0, .6);
 }
 
 * {
@@ -54,7 +55,7 @@ body[data-overlay]:after {
   width: 100%;
   z-index: 12;
   background-color: #000;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.6);
 }
 
 body[data-overlay] {
@@ -95,7 +96,7 @@ body[data-overlay] {
 
 #menu {
   position: fixed;
-  z-index: 999;
+  z-index: 550;
   top: 80px;
   bottom: 1rem;
   left: 2rem;
@@ -103,10 +104,10 @@ body[data-overlay] {
   overflow-y: auto;
   color: var(--light-color);
   font-size: 1.4rem;
-  box-shadow: 0px 2px 10px 5px rgba(0,0,0,0.5);
+  box-shadow: 0px 2px 10px 5px rgba(0,0,0,0.5), var(--hero-inset-shadow);
   background-color: var(--dark-color);
   background-image: linear-gradient(var(--dark-color), var(--secondary-color));
-  background-image: url('../img/pat_shrimp.png'), linear-gradient(var(--dark-color), var(--secondary-color));
+  background-image: url('../img/pat_shrimp.png'), linear-gradient(var(--dark-color) 60%, var(--secondary-color) 120%);
   transition: visibility 0s linear 0.6s, transform 0.6s;
   transform: scaleY(0);
   transform-origin: top center;
@@ -154,7 +155,7 @@ body[data-overlay] {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  box-shadow: inset 0px 0px 60px 10px rgba(0, 0, 0, .6);
+  box-shadow: var(--hero-inset-shadow);
 }
 
 .hero__mid {
