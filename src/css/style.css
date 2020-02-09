@@ -525,7 +525,7 @@ This is a valid block name, though
 
 .search {
   display: flex;
-  width: 300px;
+  width: 250px;
 }
 
 .search__label {
@@ -550,6 +550,7 @@ This is a valid block name, though
 }
 
 .search__input {
+  min-width: 0;
   flex: 1;
 } 
 
@@ -704,6 +705,10 @@ This is a valid block name, though
 
   .btn {
     font-size: 1.2rem;
+  }
+
+  .search {
+    width: 320px;
   }
 
   .card-list {
