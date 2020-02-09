@@ -127,6 +127,7 @@ In that case I can probably hack something together with a transition delay on v
 - The JS that changes MENU to CLOSE should be bound the the checkbox
 
 # TODO
+- [ ] The menu button transition no longer works.
 - [ ] Main hero title size has to be smaller on small screens.
 - [ ] The shrimps need to be constrained to the "container size" and/or I really need to add more of them for larger screens.
 - [x] Opening the menu has to activate a global body overlay with JS. I'm going to use an attribute on body as I've already done in other projects.

@@ -92,15 +92,15 @@ function replaceHeroImages() {
 // Delay the replacement just to see it in dev mode.
 setTimeout(replaceHeroImages, 1500);
 
-menuCheckbox.addEventListener('change', (e) => {
+menuCheckbox.addEventListener('change', () => {
   const span = menuBtn.querySelector('span');
-  if (e.currentTarget.classList.contains('open')) {
-    e.currentTarget.classList.remove('open');
+  if (menuBtn.classList.contains('open')) {
+    menuBtn.classList.remove('open');
     document.body.removeAttribute('data-overlay');
     menuBtn.style.zIndex = 20;
     span.textContent = 'Menu';
   } else {
-    e.currentTarget.classList.add('open');
+    menuBtn.classList.add('open');
     menuBtn.style.zIndex = 20;
     document.body.setAttribute('data-overlay', true);
     span.textContent = 'Fermer';
