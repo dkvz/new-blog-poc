@@ -271,6 +271,14 @@ This is a valid block name, though
   background-color: rgba(255, 255, 255, 0.82);
 }
 
+.content-card--page-card {
+  margin-top: 180px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 1.7rem;
+  font-size: 1rem;
+}
+
 .cta {
   margin-top: 145px;
   width: min-content;
@@ -727,6 +735,10 @@ This is a valid block name, though
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
+  }
+
+  .content-card--page-card {
+    font-size: 1.2rem;
   }
 
   .footer-sections {
