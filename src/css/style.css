@@ -73,6 +73,32 @@ a:active {
   animation: zomg 3s infinite;
 }
 
+/* 
+Found the basis here:
+https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling
+*/
+blockquote {
+  background: var(--lighter-gray);
+  border-left: 6px solid var(--accent-color);
+  font-style: italic;
+  margin: 1.5em 0;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: var(--grayed-color);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.5em;
+}
+
+blockquote p {
+  margin: 0.7rem 0;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -411,6 +437,7 @@ This is a valid block name, though
 }
 
 .article-header__title {
+  margin: 0 auto;
   text-align: center;
   font-size: 1.8rem;
   line-height: 2.85rem; 
@@ -851,7 +878,8 @@ This is a valid block name, though
 
   .article-header__title {
     font-size: 2rem;
-    line-height: 3rem; 
+    line-height: 3rem;
+    max-width: 88%;
   }
 
   .article-toc {

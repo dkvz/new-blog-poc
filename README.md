@@ -127,6 +127,7 @@ In that case I can probably hack something together with a transition delay on v
 - The JS that changes MENU to CLOSE should be bound the the checkbox
 
 # TODO
+- [ ] Always check reader mode - I had issues with my icons not having a fixed size.
 - [ ] Les paragraphes doivent être bien plus aérés pour les articles - Encore plus sur grand écran.
 - [x] The menu button transition no longer works.
 - [x] Main hero title size has to be smaller on small screens.
