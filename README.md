@@ -127,13 +127,14 @@ In that case I can probably hack something together with a transition delay on v
 - The JS that changes MENU to CLOSE should be bound the the checkbox
 
 # TODO
-- [ ] The menu button transition no longer works.
-- [ ] Main hero title size has to be smaller on small screens.
+- [ ] Les paragraphes doivent être bien plus aérés pour les articles - Encore plus sur grand écran.
+- [x] The menu button transition no longer works.
+- [x] Main hero title size has to be smaller on small screens.
 - [ ] The shrimps need to be constrained to the "container size" and/or I really need to add more of them for larger screens.
 - [x] Opening the menu has to activate a global body overlay with JS. I'm going to use an attribute on body as I've already done in other projects.
 - [x] I can do the good old effect where the article round image sticks out from the top.
 - [x] I need the date, read more, and comment icons.
-- [ ] Article title color is wrong. Another font would also be nice for it.
+- [ ] Article title color is wrong. Another font would also be nice for it -> I need to pick a font for article content too.
 - [ ] Ajouter une icone pour le lien flux RSS du footer, pour bien faire faudrait le mettre en orange aussi.
 - [ ] The controls to read more or go to comments for article cards should probably be links instead of buttons. I think.
 - [x] Just use BEM for once.

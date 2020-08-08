@@ -385,13 +385,23 @@ This is a valid block name, though
   margin: 1.2rem 0 0.8rem 0;
 }
 
+.section-title__title,
+.article-header {
+  padding: 0 0 1.2rem 0;
+  border-bottom: solid 4px var(--accent-color);
+}
+
 .section-title__title {
   display: inline-block;
   margin: 0 auto;
-  padding: 0 0 1.2rem 0;
-  border-bottom: solid 4px var(--accent-color);
   font-size: 1.4rem;
   font-weight: bolder;
+}
+
+.article-header__title {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2.85rem; 
 }
 
 .card {
@@ -756,6 +766,11 @@ This is a valid block name, though
   #menu {
     left: 20%;
     right: 20%;
+  }
+
+  .article-header__title {
+    font-size: 2rem;
+    line-height: 3rem; 
   }
 
 }
