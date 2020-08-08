@@ -5,7 +5,7 @@
   --ui-color: rgb(78, 205, 196);
   --secondary-color: #edebed;
   --grayed-color: #777;
-  --lighter-gray: #f9f9f9;
+  --lighter-gray: #faf6f6;
   --light-color: #fff;
   /*--dark-color: #555;*/
   --dark-color: rgb(68, 68, 68);
@@ -61,6 +61,16 @@ body[data-overlay]:after {
 
 body[data-overlay] {
   overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover,
+a:active {
+  animation: zomg 3s infinite;
 }
 
 .header {
@@ -389,7 +399,7 @@ This is a valid block name, though
 .section-title__title,
 .article-header {
   padding: 0 0 1.2rem 0;
-  border-bottom: solid 4px var(--accent-color);
+  border-bottom: solid 6px var(--accent-color);
 }
 
 .section-title__title {
@@ -409,6 +419,7 @@ This is a valid block name, though
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .article-header__desc > * {
@@ -418,7 +429,12 @@ This is a valid block name, though
 .article-toc {
   padding: var(--main-padding);
   border: 2px solid var(--accent-color);
+  border-top: none;
   background-color: var(--lighter-gray);
+}
+
+.article-toc__title {
+  font-size: 1.3rem;
 }
 
 .card {
@@ -682,6 +698,26 @@ This is a valid block name, though
   margin-top: 2rem;
 }
 
+.pill {
+  background-color: var(--ui-color);
+  color: var(--accent-color);
+  font-weight: bolder;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.8rem;
+  border-radius: 16px;
+}
+
+.pill a {
+  color: var(--accent-color);
+  transition: color .3s;
+}
+
+.pill a:hover,
+.pill a:active {
+  color: var(--primary-color);
+  animation: none;
+}
+
 .icon {
   vertical-align: middle;
   height: 20px;
@@ -718,6 +754,15 @@ This is a valid block name, though
   48%      { fill: #ffdc00; }
   64%      { fill: #b10dc9; }
   80%      { fill: #ff4136; }
+}
+
+@keyframes zomg {
+  0%, 100% { color: #7ccdea; }
+  16%      { color: #0074d9; }
+  32%      { color: #2ecc40; }
+  48%      { color: #ffdc00; }
+  64%      { color: #b10dc9; }
+  80%      { color: #ff4136; }
 }
 
 @keyframes gradient {
@@ -805,6 +850,12 @@ This is a valid block name, though
   .article-header__title {
     font-size: 2rem;
     line-height: 3rem; 
+  }
+
+  .article-toc {
+    display: inline-block;
+    min-width: 50%;
+    
   }
 
 }
