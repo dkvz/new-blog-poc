@@ -318,6 +318,7 @@ This is a valid block name, though
 
 .footer a:hover {
   color: var(--light-color);
+  animation: none;
 }
 
 .footer-sections {
@@ -558,6 +559,7 @@ This is a valid block name, though
   text-transform: uppercase;
   text-decoration: none;
   color: var(--accent-color-lighter);
+  animation: none;
 }
 
 .card__info {
