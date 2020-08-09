@@ -73,6 +73,27 @@ a:active {
   animation: zomg 3s infinite;
 }
 
+.article-image {
+  box-shadow: var(--ui-shadow);
+}
+
+/* 
+This isn't BEM but it's historical to work
+with blog content
+*/
+.center-image {
+  margin: 0 auto;
+}
+
+img-lightbox:active, img-lightbox:focus {
+  outline: 4px solid var(--ui-color);
+}
+
+img-lightbox a, img-lightbox img {
+  display: block;
+  max-width: 100%;
+}
+
 /* 
 Found the basis here:
 https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling
@@ -774,6 +795,14 @@ This is a valid block name, though
 
 .mt-3 {
   margin-top: 1.2rem;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
 }
 
 @keyframes refill {

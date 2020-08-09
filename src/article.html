@@ -122,13 +122,40 @@
 
       <h1>Autre section</h1>
       <p>Patate magique.</p>
+
+      <img-lightbox>
+        <a href="img/some-image.png" target="_blank" rel="noopener noreferrer">
+          <img src="img/some-image.png" alt="Une image que j'ai pris au hasard">
+        </a>
+      </img-lightbox>
+
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur vel quisquam eum. Dolores iusto ab facilis sequi debitis fuga eius!</p>
 
       <h2>Sous-section</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est laborum impedit temporibus consequatur. Aspernatur aut ex cum quibusdam nesciunt odio numquam asperiores animi nam nisi repellendus, qui quisquam pariatur deleniti.</p>
       
+      <p>Une autre image:</p>
+      
+      <div class="center-image">
+        <img-lightbox class="article-image">
+          <a href="img/gilleshead_350.png" target="_blank" rel="noopener noreferrer">
+            <img src="img/gilleshead_350.png" alt="C'est Gilles. Je pense.">
+          </a>
+        </img-lightbox>
+      </div>
+      
       <h3>Sous-sous-section</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut voluptate necessitatibus distinctio inventore corrupti labore illo, aperiam doloremque cumque itaque eligendi, veritatis ad est esse ex. Alias, necessitatibus qui cupiditate perferendis dolores similique, illum voluptatum optio odio ipsum voluptate cum facere laboriosam ut praesentium dignissimos rem consectetur. Rerum, aliquid.</p>
+      <p>Lorem illum voluptatum optio odio ipsum voluptate cum facere laboriosam ut praesentium dignissimos rem consectetur. Rerum, aliquid.</p>
+
+      <div class="right">
+        <img-lightbox class="article-image">
+          <a href="img/gilleshead_350.png" target="_blank" rel="noopener noreferrer">
+            <img src="img/gilleshead_350.png" alt="C'est Gilles. Je pense.">
+          </a>
+        </img-lightbox>
+      </div>
+      
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo nostrum, laboriosam quos laudantium pariatur ipsam accusamus quaerat? Provident, aliquid voluptas.</p>
 
       <h4>Sousousous section</h4>
       <p>On est loins là.</p>
@@ -168,6 +195,10 @@
     </div>    
   </footer>
 
+  <script src="https://unpkg.com/@dkvz/img-lightbox@0.2.0/dist/img-lightbox.js"></script>
+  <script>
+    customElements.define('img-lightbox', ImgLightbox.default);
+  </script> 
   <script src="js/main.js"></script>
 </body>
 

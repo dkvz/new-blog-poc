@@ -126,6 +126,20 @@ In that case I can probably hack something together with a transition delay on v
 - Change the background color to be similar to the header one
 - The JS that changes MENU to CLOSE should be bound the the checkbox
 
+### Trying to load img-lightbox using unpkg
+It's supposed to be at:
+https://unpkg.com/@dkvz/img-lightbox
+
+Which redirects to: https://unpkg.com/@dkvz/img-lightbox@0.2.0/dist/img-lightbox.js
+
+Just add the script like so:
+```html
+<script src="https://unpkg.com/@dkvz/img-lightbox@0.2.0/dist/img-lightbox.js"></script>
+<script>
+  customElements.define('img-lightbox', ImgLightbox.default);
+</script> 
+```
+
 # TODO
 - [ ] Always check reader mode - I had issues with my icons not having a fixed size.
 - [ ] Les paragraphes doivent être bien plus aérés pour les articles - Encore plus sur grand écran.
