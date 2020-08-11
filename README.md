@@ -141,6 +141,7 @@ Just add the script like so:
 ```
 
 # TODO
+- [ ] Reconcile menu code in article.html.
 - [ ] Always check reader mode - I had issues with my icons not having a fixed size.
 - [ ] Les paragraphes doivent être bien plus aérés pour les articles - Encore plus sur grand écran.
 - [x] The menu button transition no longer works.
