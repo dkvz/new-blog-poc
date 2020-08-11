@@ -11,6 +11,7 @@
   /*--dark-color: #555;*/
   --dark-color: rgb(68, 68, 68);
   --dark-color-transp: rgba(68, 68, 68, 0.86);
+  --dark-color-extra-transp: rgb(68, 68, 68, 0.6);
   --main-padding: 0.6rem;
   --content-padding: 0.6rem;
   --card-padding: 0.7rem;
@@ -204,7 +205,13 @@ navigation links.
 .menu__list a {
   display: block;
   color: var(--light-color);
-  line-height: 2.3rem;
+  padding: 0.4rem 0.4rem;
+}
+
+.menu__list a:hover,
+.menu__list a:active, 
+.menu__list a:focus {
+  background-color: var(--dark-color-extra-transp);
 }
 
 .hero {
