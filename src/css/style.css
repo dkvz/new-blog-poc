@@ -314,7 +314,7 @@ This is a valid block name, though
   background-color: var(--light-color);
   color: var(--dark-color);
   box-shadow: rgba(0, 0, 0, .14) 0px 16px 24px 2px, rgba(0, 0, 0, .12) 0px 6px 30px 5px, rgba(0, 0, 0, .2) 0px 8px 10px -7px;
-  width: 98%;
+  width: 99.6%;
   padding: var(--content-padding);
   margin-bottom: 2rem;
 }
@@ -915,6 +915,18 @@ This is a valid block name, though
     display: inline-block;
     min-width: 50%;
     
+  }
+
+}
+
+@media(min-width: 800px) and (max-width: 1024px) {
+
+  .content-card {
+    width: 95%;
+  }
+
+  .cta {
+    width: min-content;
   }
 
 }
