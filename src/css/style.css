@@ -218,7 +218,7 @@ navigation links.
   position: absolute;
   top: 0;
   left: 0;
-  height: 250px;
+  height: 200px;
   width: 100%;
   background-color: var(--dark-color);
   border-bottom: 3px solid var(--dark-color);
@@ -256,7 +256,7 @@ navigation links.
 }
 
 .hero__img {
-  height: 75%;
+  height: 60%;
 }
 
 svg.hero__img  * {
@@ -365,7 +365,7 @@ This is a valid block name, though
 }
 
 .cta {
-  margin-top: 145px;
+  margin-top: 130px;
   width: min-content;
 }
 
