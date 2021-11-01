@@ -260,7 +260,7 @@ navigation links.
 }
 
 svg.hero__img  * {
-  stroke: var(--primary-color);
+  stroke: var(--grayed-color);
 }
 
 .hero__img--v1 {
