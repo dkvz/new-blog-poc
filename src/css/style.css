@@ -417,14 +417,14 @@ This is a valid block name, though
   border: solid 1px var(--accent-color-lighter);
   border-bottom: solid 1px var(--accent-color);
   background-color: var(--ui-color);
+  color: var(--accent-color);
   box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px 0px, rgba(0, 0, 0, 0.08) 0px 1px 2px 0px;
   cursor: pointer;
   font-size: 1.1rem;
   /* We're using +2 because original border was 1px and we're
     switching to 3px, so we need +2 for the padding */
-  padding: calc(0.3rem + 2px) calc(0.9rem + 2px);
+  padding: calc(0.3rem + 2px) calc(1.4rem + 2px);
   border-radius: 5px;
-  color: var(--accent-color);
   font-weight: bolder;
   -webkit-appearance: none;
   outline: 0;
@@ -432,7 +432,6 @@ This is a valid block name, though
 }
 
 .btn:hover, .btn:focus, .btn:active {
-  transform: scale(1.02);
   background-color: var(--light-color);
 }
 
