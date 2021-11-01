@@ -218,7 +218,7 @@ navigation links.
   position: absolute;
   top: 0;
   left: 0;
-  height: 200px;
+  height: 170px;
   width: 100%;
   background-color: var(--dark-color);
   border-bottom: 3px solid var(--dark-color);
@@ -365,7 +365,7 @@ This is a valid block name, though
 }
 
 .cta {
-  margin-top: 130px;
+  margin-top: 110px;
   width: min-content;
 }
 
@@ -951,6 +951,14 @@ This is a valid block name, though
 
   .section-title__big-title {
     font-size: 2rem;
+  }
+
+}
+
+@media(min-width: 650px) and (max-width: 1024px) {
+
+  .main-title {
+    font-size: 2.4rem;
   }
 
 }
