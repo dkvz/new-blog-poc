@@ -6,6 +6,7 @@
   --secondary-color: #edebed;
   --secondary-color-transp: rgba(237, 235, 237, 0.86);
   --grayed-color: #777;
+  --light-gray-color: #aaa;
   --lighter-gray: #faf6f6;
   --light-color: #fff;
   /*--dark-color: #555;*/
@@ -412,6 +413,7 @@ This is a valid block name, though
   justify-content: center;
 }
 
+/*
 .btn {
   font-family: var(--main-font);
   border: solid 1px var(--accent-color-lighter);
@@ -423,21 +425,41 @@ This is a valid block name, though
   font-size: 1.1rem;
   /* We're using +2 because original border was 1px and we're
     switching to 3px, so we need +2 for the padding */
+  
+  /*
   padding: calc(0.3rem + 2px) calc(1.4rem + 2px);
   border-radius: 5px;
   font-weight: bolder;
   -webkit-appearance: none;
   outline: 0;
   transition: transform .3s, background-color .3s;
+}*/
+
+.btn {
+  background-color: var(--light-gray-color);
+  color: var(--dark-color);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  padding: calc(0.4rem + 3px) calc(0.8rem + 3px);
+  border: 0;
+  font-size: 1.1rem;
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  -webkit-appearance: none;
+  outline: 0;
+  transition: transform .3s, background-color .3s;
+  font-weight: bold;
 }
 
+
 .btn:hover, .btn:focus, .btn:active {
-  background-color: var(--light-color);
+  background-color: var(--grayed-color);
+  color: var(--lighter-gray);
 }
 
 .btn:focus, .btn:active {
-  padding: 0.3rem 0.9rem;
-  border: 3px solid var(--ui-color);
+  padding: 0.4rem 0.8rem;
+  border: 3px solid var(--accent-color);
 }
 
 /*.cta-buttons__btn {
@@ -663,7 +685,7 @@ This is a valid block name, though
 
 .search__label {
   width: 100%;
-  border: 3px solid var(--ui-color);
+  border: 3px solid var(--dark-color);
   padding: 0;
   margin: 0;
   display: flex;
@@ -671,7 +693,7 @@ This is a valid block name, though
 }
 
 .search__img {
-  background-color: var(--ui-color);
+  background-color: var(--dark-color);
   padding: 0.2rem 0.8rem;
   height: 34px;
 }
@@ -768,9 +790,9 @@ This is a valid block name, though
   transform: rotate(-45deg) translate(-4px, -2px);
 }
 
-.card-list__btn {
-  background-color: var(--secondary-color);
-}
+/*.card-list__btn {
+  background-color: var(--light-gray-color);
+}*/
 
 .card-list--single .card-list__btn {
   grid-column: initial;
