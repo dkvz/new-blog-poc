@@ -2,10 +2,11 @@
 
 The entire process should be mobile first this time around. Test with tablet size or smaller.
 
-The `src` folder has the work in progress. I make copies of "checkpoints" as their own directories (e.g. `version0.1`).
+The `src` folder has the work in progress. You can find previous versions at the commit right before a tagged version on git. And by "you" I mean me.
 
 -> At some point I started using tags (git tags). Here's a list:
 - v1.0 : First draft for colors, missing a lot of stuff and still using purple as primary - Which I think I should change.
+- v0.2 : Yeah I messed up. That's when I deleted the "version0.1" directory.
 
 ## Fonts
 I started out with sans-serif, have not figured anything out yet but I probably won't use a downloadable font.
