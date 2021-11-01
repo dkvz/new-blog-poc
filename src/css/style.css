@@ -257,7 +257,7 @@ navigation links.
 }
 
 .hero__img {
-  height: 60%;
+  height: 45%;
 }
 
 svg.hero__img  * {
@@ -918,6 +918,10 @@ This is a valid block name, though
 
   .search {
     width: 320px;
+  }
+
+  .hero__img {
+    height: 65%;
   }
 
   .card-list {
