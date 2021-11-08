@@ -689,7 +689,9 @@ This is a valid block name, though
   padding: 0;
   margin: 0;
   display: flex;
+  align-items: center;
   box-shadow: var(--ui-shadow);
+  background-color: var(--dark-color);
 }
 
 .search__img {
@@ -704,8 +706,14 @@ This is a valid block name, though
   padding-right: 0.2rem;
 }
 
+input[type="text"] {
+  font-family: var(--main-font);
+  padding: 10px 6px;
+} 
+
 .search__input {
   min-width: 0;
+  font-size: 1rem;
   flex: 1;
 } 
 
@@ -918,6 +926,10 @@ This is a valid block name, though
 
   .search {
     width: 320px;
+  }
+
+  .search__input {
+    font-size: 1.1rem;
   }
 
   .hero__img {
