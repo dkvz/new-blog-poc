@@ -143,6 +143,7 @@ Just add the script like so:
 
 # TODO
 - [x] Add the full size svg in noscript tags.
+- [ ] Re-add the reveal animations for cards?
 - [ ] Socials should be in the menu.
 - [ ] My typography is usually bad, especially on large screens.
 - [x] Reconcile menu code in article.html.
