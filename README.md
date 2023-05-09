@@ -143,8 +143,9 @@ Just add the script like so:
 
 # TODO
 - [x] Add the full size svg in noscript tags.
+- [ ] Socials should be in the menu.
 - [ ] My typography is usually bad, especially on large screens.
-- [ ] Reconcile menu code in article.html.
+- [x] Reconcile menu code in article.html.
 - [ ] Always check reader mode - I had issues with my icons not having a fixed size.
 - [ ] Les paragraphes doivent être bien plus aérés pour les articles - Encore plus sur grand écran.
 - [x] The menu button transition no longer works.
