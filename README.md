@@ -150,7 +150,7 @@ Just add the script like so:
 - [ ] Les paragraphes doivent être bien plus aérés pour les articles - Encore plus sur grand écran.
 - [x] The menu button transition no longer works.
 - [x] Main hero title size has to be smaller on small screens.
-- [ ] The shrimps need to be constrained to the "container size" and/or I really need to add more of them for larger screens.
+- [x] The shrimps need to be constrained to the "container size" and/or I really need to add more of them for larger screens.
 - [x] Opening the menu has to activate a global body overlay with JS. I'm going to use an attribute on body as I've already done in other projects.
 - [x] I can do the good old effect where the article round image sticks out from the top.
 - [x] I need the date, read more, and comment icons.
