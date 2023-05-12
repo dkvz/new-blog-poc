@@ -143,6 +143,7 @@ Just add the script like so:
 
 # TODO
 - [x] Add the full size svg in noscript tags.
+- [ ] With the gray gradient background, the transparency on the main sections of the home page is sort of useless (see `content-card--transp`).
 - [ ] Re-add the reveal animations for cards?
 - [ ] Re-add the page transition animation
 - [ ] Socials should be in the menu.
