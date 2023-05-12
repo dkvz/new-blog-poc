@@ -475,10 +475,10 @@ This is a valid block name, though
 }*/
 
 .card-list {
-  padding: 1rem;
+  padding: 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   max-width: 980px;
   margin: 0 auto;
 }
@@ -937,6 +937,7 @@ input[type="text"] {
   }
 
   .card-list {
+    padding: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
   

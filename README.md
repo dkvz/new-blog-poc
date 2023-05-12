@@ -144,6 +144,7 @@ Just add the script like so:
 # TODO
 - [x] Add the full size svg in noscript tags.
 - [ ] Re-add the reveal animations for cards?
+- [ ] Re-add the page transition animation
 - [ ] Socials should be in the menu.
 - [ ] My typography is usually bad, especially on large screens.
 - [x] Reconcile menu code in article.html.
@@ -181,4 +182,3 @@ Just add the script like so:
 - [x] Figure out where to put the menu button, wheel or whatever it's going to be.
 - [ ] The header can have both a home button and the menu icon. Both needs some good hover transitions. Actually it should have a twitter button first. Don't know how much I can fit on mobile.
   - [x] Home button will be the header title
-- [ ] Add more drop shadows for the footer, it's got holes at both sides, I think we need 3 shadows.
