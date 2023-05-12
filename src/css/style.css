@@ -853,6 +853,9 @@ input[type="text"] {
   font-size: 0.94rem;
 }
 
+/* Group utilities here 
+  (if I remember to) */
+
 .mt-1 {
   margin-top: 0.4rem;
 }
@@ -867,10 +870,12 @@ input[type="text"] {
 
 .right {
   float: right;
+  margin-left: 0.8rem;
 }
 
 .left {
   float: left;
+  margin-right: 0.8rem;
 }
 
 @keyframes refill {
