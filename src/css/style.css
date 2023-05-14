@@ -878,6 +878,36 @@ input[type="text"] {
   margin-right: 0.8rem;
 }
 
+.scale-up {
+  transform: scale(0.6);
+  animation: scaleup 0.5s ease-in-out forwards;
+}
+
+@keyframes scaleup {
+  0% {}
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Simple page transition I'm using */
+.trans-left {
+  animation: transleft 0.6s ease;
+}
+
+@keyframes transleft {
+  0% {
+    transform: translate3d(-20vw, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 @keyframes refill {
   0%, 100% { fill: #7ccdea; }
   16%      { fill: #0074d9; }

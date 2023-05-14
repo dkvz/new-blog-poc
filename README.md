@@ -141,6 +141,58 @@ Just add the script like so:
 </script> 
 ```
 
+## Animations
+
+### Card reveal animation
+I forgot how I did it.
+
+Scroll event:
+```js
+revealScrollCallback: function () {
+  if (!app.pauseRevealAnimations &&
+    (app.toAnimate && app.toAnimate.length > 0)) {
+    app.pauseRevealAnimations = true;
+    var inViewCount = 0;
+    for (var i = 0; i < app.toAnimate.length; i++) {
+      // Check if that element is in view:
+      if (app.isInViewport(app.toAnimate[i], 0.05)) {
+        // Add the scale-up class and change the animation
+        // delay:
+        app.toAnimate[i].className += ' scale-up';
+        app.toAnimate[i].style.animationDelay = (inViewCount * 0.15) + 's';
+        inViewCount++;
+        // Remove the element from toAnimate:
+        app.toAnimate.splice(i, 1);
+        i--;
+      }
+    }
+    app.pauseRevealAnimations = false;
+  }
+}
+```
+
+Fetched articles were pushed into the `toAnimate` global thingy while a special boolean `pauseRevealAnimation` was toggled to prevent the scroll callback to do its thing.
+
+I only add the scaling animation class if the element "is in view" which is checked like so:
+```js
+isInViewport: function (el, h) {
+  var elH = el.offsetHeight,
+    scrolled = window.pageYOffset || document.documentElement.scrollTop,
+    viewed = scrolled + this.getViewportH(),
+    elTop = this.getOffset(el).top,
+    elBottom = elTop + elH,
+    // if 0, the element is considered in the viewport as soon as it enters.
+    // if 1, the element is considered in the viewport only when it's fully inside
+    // value in percentage (1 >= h >= 0)
+    h = h || 0;
+  return (elTop + elH * h) <= viewed && (elBottom - elH * h) >= scrolled;
+}
+```
+
+There has to be an easier way.
+
+I'm off to work out how the really weird [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) works.
+
 # TODO
 - [x] Add the full size svg in noscript tags.
 - [ ] With the gray gradient background, the transparency on the main sections of the home page is sort of useless (see `content-card--transp`).
