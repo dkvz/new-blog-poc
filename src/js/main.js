@@ -2,6 +2,7 @@ const heroImages = document.querySelectorAll('.hero__img'),
   menuBtn = document.querySelector('.menu-btn'),
   menuCheckbox = document.getElementById('menu-checkbox'),
   header = document.querySelector('.header');
+
 const images = [
   {
     src: 'img/shrimp_plain1.svg'
@@ -111,3 +112,36 @@ dynamicNav.init(header);
 
 // For debug:
 window.dynamicNav = dynamicNav;
+
+
+
+/** Reveal animation on cards **/
+const revealOptions = {
+  // It's actually the default (replace with scrolling element):
+  root: document,
+  // Serves in intersection calculations, fiddle 
+  // with it if you have to; I hope you don't.
+  rootMargin: "0px",
+  // From 0 to 1.0 -> Percentage of elment that needs 
+  // to be showing to trigger the callback.
+  // Can actually be an array to trigger the callback
+  // at multiple reveal points (progression).
+  threshold: 0.1,
+}
+
+function onScrollReveal(entries, observer) {
+  let inViewCount = 0
+  for (const entry of entries) {
+    if (entry.isIntersecting) {
+      // For my use case I'd like to stop observing here
+      observer.unobserve(entry.target)
+      entry.target.style.animationDelay = (inViewCount * 0.15) + 's'
+      entry.target.classList.add('scale-up')
+      inViewCount++
+    }
+  }
+}
+
+const revealObserver = new IntersectionObserver(onScrollReveal, revealOptions)
+const cards = document.querySelectorAll('.card')
+cards.forEach(c => revealObserver.observe(c))

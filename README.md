@@ -173,6 +173,8 @@ revealScrollCallback: function () {
 
 Fetched articles were pushed into the `toAnimate` global thingy while a special boolean `pauseRevealAnimation` was toggled to prevent the scroll callback to do its thing.
 
+There's also the `animationDelay` being added for the animation to be staged.
+
 I only add the scaling animation class if the element "is in view" which is checked like so:
 ```js
 isInViewport: function (el, h) {
@@ -196,8 +198,8 @@ I'm off to work out how the really weird [Intersection Observer API](https://dev
 # TODO
 - [x] Add the full size svg in noscript tags.
 - [ ] With the gray gradient background, the transparency on the main sections of the home page is sort of useless (see `content-card--transp`).
-- [ ] Re-add the reveal animations for cards?
-- [ ] Re-add the page transition animation
+- [x] Re-add the reveal animations for cards?
+- [ ] Re-add the page transition animation (styles are already there)
 - [ ] Socials should be in the menu.
 - [ ] My typography is usually bad, especially on large screens.
 - [x] Reconcile menu code in article.html.
