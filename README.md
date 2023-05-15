@@ -199,9 +199,9 @@ I'm off to work out how the really weird [Intersection Observer API](https://dev
 - [x] Add the full size svg in noscript tags.
 - [ ] With the gray gradient background, the transparency on the main sections of the home page is sort of useless (see `content-card--transp`).
 - [x] Re-add the reveal animations for cards?
-- [ ] Re-add the page transition animation (styles are already there)
+- [x] Re-add the page transition animation (styles are already there)
 - [ ] Socials should be in the menu.
-- [ ] My typography is usually bad, especially on large screens.
+- [ ] My typography is usually bad, especially on large screens and the article page looks BAD.
 - [x] Reconcile menu code in article.html.
 - [ ] Always check reader mode - I had issues with my icons not having a fixed size.
 - [ ] Les paragraphes doivent être bien plus aérés pour les articles - Encore plus sur grand écran.
@@ -235,5 +235,3 @@ I'm off to work out how the really weird [Intersection Observer API](https://dev
   * Or there's the good old cutting a circle and putting the shrimp in it, on top of the hero.
   * Solid background color + shrimp cut out in it in SVG (white or dark shrimp - no colors) - Or multiple shrimps. -> That would be cool, I can animate that background.
 - [x] Figure out where to put the menu button, wheel or whatever it's going to be.
-- [ ] The header can have both a home button and the menu icon. Both needs some good hover transitions. Actually it should have a twitter button first. Don't know how much I can fit on mobile.
-  - [x] Home button will be the header title
