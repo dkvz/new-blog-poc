@@ -126,7 +126,7 @@ const revealOptions = {
   // to be showing to trigger the callback.
   // Can actually be an array to trigger the callback
   // at multiple reveal points (progression).
-  threshold: 0.1,
+  threshold: 0.03,
 }
 
 function onScrollReveal(entries, observer) {
