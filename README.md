@@ -200,11 +200,13 @@ I'm off to work out how the really weird [Intersection Observer API](https://dev
 - [ ] With the gray gradient background, the transparency on the main sections of the home page is sort of useless (see `content-card--transp`).
 - [x] Re-add the reveal animations for cards?
 - [x] Re-add the page transition animation (styles are already there)
+- [ ] Les paragraphes doivent être bien plus aérés pour les articles - Encore plus sur grand écran.
+  * Meilleur line height: 32px (ou "2") voire 28px ("1.75") qui est classique. 24px devrait être un minimum.
+- [ ] I could add a reveal effect on images (and maybe titles?) using other intersection observers.
 - [ ] Socials should be in the menu.
 - [ ] My typography is usually bad, especially on large screens and the article page looks BAD.
 - [x] Reconcile menu code in article.html.
 - [ ] Always check reader mode - I had issues with my icons not having a fixed size.
-- [ ] Les paragraphes doivent être bien plus aérés pour les articles - Encore plus sur grand écran.
 - [x] The menu button transition no longer works.
 - [x] Main hero title size has to be smaller on small screens.
 - [x] The shrimps need to be constrained to the "container size" and/or I really need to add more of them for larger screens.

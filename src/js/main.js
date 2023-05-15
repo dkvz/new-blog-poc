@@ -91,7 +91,7 @@ function replaceHeroImages() {
 }
 
 // Delay the replacement just to see it in dev mode.
-setTimeout(replaceHeroImages, 1500);
+setTimeout(replaceHeroImages, 1300);
 
 menuCheckbox.addEventListener('change', () => {
   const span = menuBtn.querySelector('span');
