@@ -18,19 +18,19 @@ const dynamicNav = {
   sticky: false,
   waiting: false,
   init: function(el) {
-    this.el = el;
+    this.el = el
     this.stickT = el.getBoundingClientRect ? 
-      el.getBoundingClientRect().height : 150;
-    this.hideT = this.stickT * 6;
-    this.sticky = false;
+      el.getBoundingClientRect().height : 150
+    this.hideT = this.stickT * 6
+    this.sticky = false
     window.addEventListener(
       'scroll', 
       this.onScroll.bind(this)
-    );
+    )
   },
   debug: function(action) {
-    console.log(`hideT = ${this.hideT} - stickT = ${this.stickT}`);
-    console.log(`${action} - Offset: ${window.pageYOffset}`);
+    console.log(`hideT = ${this.hideT} - stickT = ${this.stickT}`)
+    console.log(`${action} - Offset: ${window.pageYOffset}`)
   },
   onScroll: function() {
     //if (this.waiting) return;
@@ -38,23 +38,23 @@ const dynamicNav = {
       (window.pageYOffset > this.hideT || 
         window.pageYOffset <= this.stickT)) {
       // Hide the menu (reset its position)
-      this.el.style.transform = 'scaleY(0)';
+      this.el.style.transform = 'scaleY(0)'
       setTimeout(() => {
-        this.el.style.transform = '';
+        this.el.style.transform = ''
         this.el.classList.remove(this.stickyClass);
         this.sticky = false;
         //this.debug('Removed');
-      }, 400);
+      }, 400)
     } else if (!this.sticky && 
         window.pageYOffset > this.stickT && 
         window.pageYOffset <= this.hideT) {
       // Sticky the menu
-      this.el.classList.add(this.stickyClass);
+      this.el.classList.add(this.stickyClass)
       // TODO: I don't know if this is necessary:
-      this.el.style.opacity = 0.4;
-      setTimeout(() => this.el.style.opacity = 1, 300);
+      this.el.style.opacity = 0.4
+      setTimeout(() => this.el.style.opacity = 1, 300)
       // --
-      this.sticky = true;
+      this.sticky = true
       //this.debug('Added');
     }
     //this.waiting = true;
@@ -65,23 +65,23 @@ const dynamicNav = {
 
 function replaceHeroImages() {
   heroImages.forEach((e, i) => {
-    const currentImg = images[i % heroImages.length];
+    const currentImg = images[i % heroImages.length]
     fetch(currentImg.src)
       .then(resp => {
         if (resp.status >= 200 && resp.status < 300) {
           resp.text().then(
             data => {
-              const temp = document.createElement('div');
-              temp.innerHTML = data;
-              const svgEl = temp.firstElementChild;
+              const temp = document.createElement('div')
+              temp.innerHTML = data
+              const svgEl = temp.firstElementChild
               if (temp.firstElementChild.nodeName === 'svg') {
                 // Duplicate the viewBox:
-                const newVb = temp.firstElementChild.getAttribute('viewBox');
+                const newVb = temp.firstElementChild.getAttribute('viewBox')
                 if (newVb) 
-                  e.setAttribute('viewBox', newVb);
+                  e.setAttribute('viewBox', newVb)
                 if (currentImg.className) 
-                  e.classList.add(currentImg.className);
-                e.innerHTML = svgEl.innerHTML;
+                  e.classList.add(currentImg.className)
+                e.innerHTML = svgEl.innerHTML
               }
             }
           );

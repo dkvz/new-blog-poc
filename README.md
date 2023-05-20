@@ -195,6 +195,11 @@ There has to be an easier way.
 
 I'm off to work out how the really weird [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) works.
 
+## Changes to article components
+
+* The h1 element should no longer appear in article body, we need to increment all the headings and the table of content generation has to be modified accordingly.
+* Images will be fairly different
+
 # TODO
 - [x] Add the full size svg in noscript tags.
 - [ ] With the gray gradient background, the transparency on the main sections of the home page is sort of useless (see `content-card--transp`).
