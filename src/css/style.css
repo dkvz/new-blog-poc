@@ -81,6 +81,11 @@ a:active {
   box-shadow: var(--ui-shadow);
 }
 
+.to-reveal {
+  opacity: 0.1;
+  transition: opacity 0.5s;
+}
+
 /* 
 This isn't BEM but it's historical to work
 with blog content
