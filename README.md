@@ -202,7 +202,11 @@ I'm off to work out how the really weird [Intersection Observer API](https://dev
 
 # TODO
 - [x] Add the full size svg in noscript tags.
+- [ ] Add animation with intersection observer for article body titles and images.
 - [ ] With the gray gradient background, the transparency on the main sections of the home page is sort of useless (see `content-card--transp`).
+- [ ] How can I implement a header "progress bar" (more like progress-line)? Only for articles page.  Could be made using the border under the header.
+- [ ] When the menu is showing, bind Esc to hide it.
+- [ ] Dyanmic nav could be refactored to use intersection observer. 
 - [x] Re-add the reveal animations for cards?
 - [x] Re-add the page transition animation (styles are already there)
 - [x] Les paragraphes doivent être bien plus aérés pour les articles - Encore plus sur grand écran.
