@@ -200,6 +200,14 @@ I'm off to work out how the really weird [Intersection Observer API](https://dev
 * The h1 element should no longer appear in article body, we need to increment all the headings and the table of content generation has to be modified accordingly.
 * Images will be fairly different
 
+# Font choices
+
+Serif free fonts I like:
+* Volkorn
+* Philosopher
+
+Trying Philosopher for article content.
+
 # TODO
 - [x] Add the full size svg in noscript tags.
 - [ ] Add animation with intersection observer for article body titles.
@@ -220,7 +228,6 @@ I'm off to work out how the really weird [Intersection Observer API](https://dev
 - [x] Opening the menu has to activate a global body overlay with JS. I'm going to use an attribute on body as I've already done in other projects.
 - [x] I can do the good old effect where the article round image sticks out from the top.
 - [x] I need the date, read more, and comment icons.
-- [ ] Article title color is wrong. Another font would also be nice for it -> I need to pick a font for article content too.
 - [ ] Ajouter une icone pour le lien flux RSS du footer, pour bien faire faudrait le mettre en orange aussi.
 - [ ] The controls to read more or go to comments for article cards should probably be links instead of buttons. I think.
 - [x] Just use BEM for once.
