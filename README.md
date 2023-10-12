@@ -208,6 +208,10 @@ Serif free fonts I like:
 
 Trying Philosopher for article content.
 
+I'll do the woff and woff2 later, maybe Webpack or another bundler can generate them for me. Let's use the TTFs for now.
+
+Actually I'll just use the Google CDN imports for now.
+
 # TODO
 - [x] Add the full size svg in noscript tags.
 - [ ] Add animation with intersection observer for article body titles.

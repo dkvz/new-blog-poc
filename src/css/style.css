@@ -377,6 +377,12 @@ This is a valid block name, though
   line-height: 1.75;
 }
 
+/* Parent element for all of the 
+article content and headlines */
+.article-content {
+  font-family: 'Philosopher', serif;
+}
+
 .cta {
   margin-top: 110px;
   width: min-content;
