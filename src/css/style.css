@@ -343,7 +343,8 @@ This is a valid block name, though
 }
 
 .content-card {
-  text-align: justify;
+  text-align: left;
+  hyphens: auto;
   background-color: var(--light-color);
   color: var(--dark-color);
   box-shadow: rgba(0, 0, 0, .14) 0px 16px 24px 2px, rgba(0, 0, 0, .12) 0px 6px 30px 5px, rgba(0, 0, 0, .2) 0px 8px 10px -7px;
@@ -381,6 +382,16 @@ This is a valid block name, though
 article content and headlines */
 .article-content {
   font-family: 'Philosopher', serif;
+  font-size: 1.2rem;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .cta {
@@ -1048,6 +1059,10 @@ input[type="text"] {
 
   .section-title__big-title {
     font-size: 2rem;
+  }
+
+  .article-content {
+    font-size: 1.4rem;
   }
 
 }
