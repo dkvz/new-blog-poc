@@ -232,6 +232,7 @@ Actually I'll just use the Google CDN imports for now.
 - [x] Opening the menu has to activate a global body overlay with JS. I'm going to use an attribute on body as I've already done in other projects.
 - [x] I can do the good old effect where the article round image sticks out from the top.
 - [x] I need the date, read more, and comment icons.
+- [ ] The spinner for loading extra content on the homepage could be a flat three dotes that get bigger and smaller alternatively.
 - [ ] Ajouter une icone pour le lien flux RSS du footer, pour bien faire faudrait le mettre en orange aussi.
 - [ ] The controls to read more or go to comments for article cards should probably be links instead of buttons. I think.
 - [x] Just use BEM for once.
