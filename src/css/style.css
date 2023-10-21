@@ -19,7 +19,7 @@
   --ui-shadow: 0px 0px 4px var(--dark-color);
   --text-shadow-1: 2px 2px 2px var(--accent-color);
   --text-shadow-2: 0px 0px 6px var(--accent-color);
-  --main-font: sans-serif;
+  --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --container-width: 1000px;
   --hero-inset-shadow: inset 0px 0px 60px 10px rgba(0, 0, 0, .6);
 }
@@ -391,7 +391,7 @@ article content and headlines */
 .article-content h4,
 .article-content h5,
 .article-content h6 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--main-font);
 }
 
 .cta {
@@ -545,7 +545,7 @@ article content and headlines */
 .article-header__title {
   margin: 0 auto;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 2.85rem; 
 }
 
@@ -1047,8 +1047,8 @@ input[type="text"] {
   }
 
   .article-header__title {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
     max-width: 88%;
   }
 
