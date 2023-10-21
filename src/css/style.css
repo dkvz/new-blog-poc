@@ -842,8 +842,8 @@ input[type="text"] {
 }
 
 .pill {
-  background-color: var(--ui-color);
-  color: var(--accent-color);
+  background-color: var(--secondary-color-transp);
+  color: var(--primary-color);
   font-weight: bolder;
   font-size: 0.9rem;
   padding: 0.2rem 0.8rem;
@@ -851,13 +851,13 @@ input[type="text"] {
 }
 
 .pill a {
-  color: var(--accent-color);
+  color: var(--primary-color);
   transition: color .3s;
 }
 
 .pill a:hover,
 .pill a:active {
-  color: var(--primary-color);
+  color: var(--accent-color);
   animation: none;
 }
 
@@ -1063,6 +1063,11 @@ input[type="text"] {
 
   .article-content {
     font-size: 1.4rem;
+  }
+
+  .pill {
+    font-size: 1rem;
+    padding: 0.4rem 1.2rem;
   }
 
 }
