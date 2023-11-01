@@ -20,6 +20,7 @@
   --text-shadow-1: 2px 2px 2px var(--accent-color);
   --text-shadow-2: 0px 0px 6px var(--accent-color);
   --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --article-font: 'Philosopher', medium-content-serif-font, Georgia, Cambria, serif;
   --container-width: 1000px;
   --hero-inset-shadow: inset 0px 0px 60px 10px rgba(0, 0, 0, .6);
 }
@@ -395,7 +396,7 @@ This is a valid block name, though
 /* Parent element for all of the 
 article content and headlines */
 .article-content {
-  font-family: 'Philosopher', serif;
+  font-family: var(--article-font);
   font-size: 1.2rem;
 }
 
