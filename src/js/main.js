@@ -1,7 +1,8 @@
 const heroImages = document.querySelectorAll('.hero__img'),
   menuBtn = document.querySelector('.menu-btn'),
   menuCheckbox = document.getElementById('menu-checkbox'),
-  header = document.querySelector('.header');
+  header = document.querySelector('.header'),
+  menu = document.querySelector('#menu');
 
 const images = [
   {
@@ -93,7 +94,7 @@ function replaceHeroImages() {
 // Delay the replacement just to see it in dev mode.
 setTimeout(replaceHeroImages, 1300);
 
-menuCheckbox.addEventListener('change', () => {
+function menuCheckboxChange() {
   const span = menuBtn.querySelector('span');
   if (menuBtn.classList.contains('open')) {
     menuBtn.classList.remove('open');
@@ -101,12 +102,30 @@ menuCheckbox.addEventListener('change', () => {
     menuBtn.style.zIndex = 20;
     span.textContent = 'Menu';
   } else {
+    addEventListener('keydown', escMenuCallback);
     menuBtn.classList.add('open');
     menuBtn.style.zIndex = 20;
     document.body.setAttribute('data-overlay', true);
     span.textContent = 'Fermer';
   }
-})
+}
+
+function escMenuCallback(e) {
+  if (e.key === 'Escape') {
+    menuCheckbox.checked = false;
+    menuCheckboxChange();
+    removeEventListener('keydown', escMenuCallback);
+    /*if (!menuBtn.classList.contains('open')) {
+      const span = menuBtn.querySelector('span');
+      menuBtn.classList.remove('open');
+      document.body.removeAttribute('data-overlay');
+      menuBtn.style.zIndex = 20;
+      span.textContent = 'Menu';
+    }*/
+  }
+}
+
+menuCheckbox.addEventListener('change', menuCheckboxChange)
 
 dynamicNav.init(header);
 

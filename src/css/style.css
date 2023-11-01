@@ -301,7 +301,7 @@ svg.socials {
 svg.socials:hover,
 svg.socials:active {
   fill: var(--light-gray-color);
-  transform: rotate(20deg);
+  transform: rotate(-20deg);
 }
 
 .hero__img--v1 {
