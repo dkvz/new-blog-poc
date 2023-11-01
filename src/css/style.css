@@ -235,6 +235,14 @@ navigation links.
   background-color: var(--dark-color-extra-transp);
 }
 
+.menu__socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  min-width: 110px;
+}
+
 .hero {
   position: absolute;
   top: 0;
@@ -282,6 +290,10 @@ navigation links.
 
 svg.hero__img  * {
   stroke: var(--grayed-color);
+}
+
+svg.socials {
+  fill: var(--light-color);
 }
 
 .hero__img--v1 {

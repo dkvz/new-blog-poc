@@ -49,6 +49,13 @@ This works alright:
 
 I like that page: https://en.wikipedia.org/wiki/Web_colors
 
+### Other color ideas
+
+* Yellow text #b69f6e
+* Dark gray bg: #262626
+* Gray subtext #727272
+
+
 ## SVGs in top bar
 I thought of inlining a very compressed version then load the full one and replace the SVG content with it when loaded.
 
