@@ -294,6 +294,13 @@ svg.hero__img  * {
 
 svg.socials {
   fill: var(--light-color);
+  transition: all ease-out 0.3s;
+}
+
+svg.socials:hover,
+svg.socials:active {
+  fill: var(--light-gray-color);
+  transform: rotate(20deg);
 }
 
 .hero__img--v1 {
@@ -1085,7 +1092,7 @@ input[type="text"] {
   }
 
   .section-title__big-title {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   .article-content {
