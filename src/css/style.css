@@ -240,7 +240,7 @@ navigation links.
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
-  min-width: 110px;
+  gap: 1.4rem;
 }
 
 .hero {
@@ -295,6 +295,7 @@ svg.hero__img  * {
 svg.socials {
   fill: var(--light-color);
   transition: all ease-out 0.3s;
+  height: 48px;
 }
 
 svg.socials:hover,

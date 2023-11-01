@@ -226,12 +226,11 @@ Actually I'll just use the Google CDN imports for now.
 - [ ] How can I implement a header "progress bar" (more like progress-line)? Only for articles page.  Could be made using the border under the header.
 - [ ] When the menu is showing, bind Esc to hide it.
 - [ ] Dyanmic nav could be refactored to use intersection observer. 
+- [ ] Add scroll snapping on titles for articles.
 - [x] Re-add the reveal animations for cards?
 - [x] Re-add the page transition animation (styles are already there)
 - [x] Les paragraphes doivent être bien plus aérés pour les articles - Encore plus sur grand écran.
-- [ ] Socials should be in the menu.
-- [ ] My typography is usually bad, especially on large screens and the article page looks BAD.
-- [x] Reconcile menu code in article.html.
+- [x] Socials should be in the menu.
 - [ ] Always check reader mode - I had issues with my icons not having a fixed size.
 - [x] The menu button transition no longer works.
 - [x] Main hero title size has to be smaller on small screens.
