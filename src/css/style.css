@@ -775,6 +775,8 @@ article content and headlines */
 input[type="text"] {
   font-family: var(--main-font);
   padding: 10px 6px;
+  background-color: var(--light-color);
+  color: var(--dark-color);
 } 
 
 .search__input {
@@ -1134,7 +1136,7 @@ input[type="text"] {
     --secondary-color: rgb(119, 119, 119);
     --secondary-color-transp: rgba(119, 119, 119, 0.86);
     --grayed-color: rgb(235, 237, 235);
-    --light-gray-color: #aaa;
+    --light-gray-color: #333;
     --lighter-gray: #999;
     --light-color: rgb(68, 68, 68);
     /*--dark-color: var(--grayed-color);*/
@@ -1151,6 +1153,10 @@ input[type="text"] {
 
   .quote-card {
     background-color: rgba(37,6,37,0.15);
+  }
+
+  .invertable--img {
+    filter: invert();
   }
 
 }
