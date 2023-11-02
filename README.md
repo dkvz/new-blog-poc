@@ -224,7 +224,7 @@ Actually I'll just use the Google CDN imports for now.
 - [ ] Add animation with intersection observer for article body titles.
 - [ ] With the gray gradient background, the transparency on the main sections of the home page is sort of useless (see `content-card--transp`).
 - [ ] How can I implement a header "progress bar" (more like progress-line)? Only for articles page.  Could be made using the border under the header.
-- [ ] When the menu is showing, bind Esc to hide it.
+- [x] When the menu is showing, bind Esc to hide it.
 - [ ] Dyanmic nav could be refactored to use intersection observer. 
 - [ ] Add scroll snapping on titles for articles.
 - [x] Re-add the reveal animations for cards?

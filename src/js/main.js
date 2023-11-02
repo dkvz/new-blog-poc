@@ -115,13 +115,6 @@ function escMenuCallback(e) {
     menuCheckbox.checked = false;
     menuCheckboxChange();
     removeEventListener('keydown', escMenuCallback);
-    /*if (!menuBtn.classList.contains('open')) {
-      const span = menuBtn.querySelector('span');
-      menuBtn.classList.remove('open');
-      document.body.removeAttribute('data-overlay');
-      menuBtn.style.zIndex = 20;
-      span.textContent = 'Menu';
-    }*/
   }
 }
 
