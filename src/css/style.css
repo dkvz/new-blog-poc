@@ -29,23 +29,6 @@ html {
   --hero-inset-shadow: inset 0px 0px 60px 10px rgba(0, 0, 0, .6);
 }
 
-/* Used when OS level dark mode is set */
-@media (prefers-color-scheme: dark) {
-
-  html {
-    --secondary-color: rgb(119, 119, 119);
-    --secondary-color-transp: rgba(119, 119, 119, 0.86);
-    --grayed-color: rgb(235, 237, 235);
-    --light-gray-color: #aaa;
-    --lighter-gray: #999;
-    --light-color: rgb(68, 68, 68);
-    --dark-color: var(--grayed-color);
-    --dark-color-transp: rgba(235, 237, 235, 0.86);
-    --dark-color-extra-transp: rgb(235, 237, 235, 0.6);
-  }
-
-}
-
 html, body {
   min-height: 100vh;
 }
@@ -416,7 +399,7 @@ This is a valid block name, though
 }
 
 .content-card--transp {
-  background-color: rgba(255, 255, 255, 0.82);
+  background-color: var(--secondary-color-transp);
 }
 
 .content-card--page-card {
@@ -1140,6 +1123,34 @@ input[type="text"] {
 
   .cta {
     width: min-content;
+  }
+
+}
+
+/* Used when OS level dark mode is set */
+@media (prefers-color-scheme: dark) {
+
+  html {
+    --secondary-color: rgb(119, 119, 119);
+    --secondary-color-transp: rgba(119, 119, 119, 0.86);
+    --grayed-color: rgb(235, 237, 235);
+    --light-gray-color: #aaa;
+    --lighter-gray: #999;
+    --light-color: rgb(68, 68, 68);
+    /*--dark-color: var(--grayed-color);*/
+    --dark-color: rgb(202, 190, 202);
+    --dark-color-transp: rgba(235, 237, 235, 0.86);
+    --dark-color-extra-transp: rgb(235, 237, 235, 0.6);
+  }
+
+  .bg--gradient {
+    background-color: var(--light-color);
+    /*background: linear-gradient(to bottom, rgb(37, 6, 37) 0%,var(--light-color) 100%);*/
+    background: linear-gradient(to bottom,var(--light-color) 0%,  rgb(37, 6, 37) 100%);
+  }
+
+  .quote-card {
+    background-color: rgba(37,6,37,0.15);
   }
 
 }
