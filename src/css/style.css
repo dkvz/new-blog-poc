@@ -510,6 +510,7 @@ article content and headlines */
   box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   -webkit-appearance: none;
+  appearance: none;
   outline: 0;
   transition: transform .3s, background-color .3s;
   font-weight: bold;
@@ -1157,6 +1158,11 @@ input[type="text"] {
 
   .invertable--img {
     filter: invert();
+  }
+
+  .btn:hover, .btn:focus, .btn:active {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
   }
 
 }
