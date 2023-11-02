@@ -1,4 +1,8 @@
-:root {
+* {
+  box-sizing: border-box;
+}
+
+html {
   --primary-color: rgb(110, 96, 204);
   --accent-color: rgb(182, 35, 150);
   --accent-color-lighter: rgba(224, 66, 190, 0.7);
@@ -25,8 +29,21 @@
   --hero-inset-shadow: inset 0px 0px 60px 10px rgba(0, 0, 0, .6);
 }
 
-* {
-  box-sizing: border-box;
+/* Used when OS level dark mode is set */
+@media (prefers-color-scheme: dark) {
+
+  html {
+    --secondary-color: rgb(119, 119, 119);
+    --secondary-color-transp: rgba(119, 119, 119, 0.86);
+    --grayed-color: rgb(235, 237, 235);
+    --light-gray-color: #aaa;
+    --lighter-gray: #999;
+    --light-color: rgb(68, 68, 68);
+    --dark-color: var(--grayed-color);
+    --dark-color-transp: rgba(235, 237, 235, 0.86);
+    --dark-color-extra-transp: rgb(235, 237, 235, 0.6);
+  }
+
 }
 
 html, body {
