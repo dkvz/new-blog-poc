@@ -1168,12 +1168,17 @@ input[type="text"] {
 
   body > footer {
     color: var(--secondary-color);
-    background-color: var(--dark-color-quote);
+    /*background-color: var(--dark-color-quote);*/
+    background: linear-gradient(to bottom,var(--light-color) 0%,  rgb(37, 6, 37) 180%);
     box-shadow: 0 -4px 4px rgba(0, 0, 0, .6);
   }
 
   .hero {
     border-bottom: none;
+  }
+
+  .footer-sections p {
+    color: var(--dark-color);
   }
 
 }
