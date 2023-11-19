@@ -1,3 +1,12 @@
+/**
+TODO
+Lots of repeated styles from the default stylesheet are in here.
+Maybe it can be stripped down significantly.
+OR
+CSS props present in both light and dark.css can be REMOVED from
+default CSS.
+**/
+
 :root {
   --secondary-color: #edebed;
   --secondary-color-transp: rgba(237, 235, 237, 0.86);
@@ -9,3 +18,40 @@
   --dark-color-transp: rgba(68, 68, 68, 0.86);
   --dark-color-extra-transp: rgb(68, 68, 68, 0.6);
 }
+
+.bg--gradient {
+  background-color: var(--secondary-color);
+  /*background: linear-gradient(to bottom, rgba(220,220,220,0.9) 0%,rgba(69,90,100,0.9) 100%);*/
+  background: linear-gradient(to bottom, var(--secondary-color) 0%,rgba(68,68,68,0.9) 100%);
+}
+
+.quote-card {
+  background-color: var(--dark-color);
+}
+
+.btn:hover, .btn:focus, .btn:active {
+  background-color: var(--grayed-color);
+  color: var(--lighter-gray);
+}
+
+body > footer {
+  color: var(--light-color);
+  background-color: var(--dark-color);
+}
+
+.footer-sections p {
+  color: var(--light-color);
+}
+
+.pill {
+  background-color: var(--secondary-color-transp);
+}
+
+.pill a {
+  color: var(--primary-color);
+}
+
+.pill a:hover {
+  color: var(--accent-color);
+}
+
