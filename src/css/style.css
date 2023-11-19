@@ -1188,4 +1188,25 @@ input[type="text"] {
     color: var(--dark-color);
   }
 
+  .pill {
+    background-color: var(--dark-color);
+  }
+
+  .pill a {
+    color: var(--accent-color);
+  }
+
+  .pill a:hover {
+    color: var(--primary-color);
+  }
+
+  .article-toc {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+  }
+
+  .article-header__desc span {
+    color: var(--secondary-color);
+  }
+
 }
