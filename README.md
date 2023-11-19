@@ -220,7 +220,8 @@ I'll do the woff and woff2 later, maybe Webpack or another bundler can generate 
 Actually I'll just use the Google CDN imports for now.
 
 # TODO
-- [ ] Maybe use some sort of tame rainbow bg for the articles page on dark mode? I have an example of that somewhere. 
+- [ ] Maybe use some sort of tame rainbow bg for the articles page on dark mode? I have an example of that somewhere.
+- [ ] I should use backdrop-filter somewhere, with a progressive fallback that makes sense. 
 - [x] Add the full size svg in noscript tags.
 - [ ] Date bubbles are way too small on cards, at least on large screens.
 - [ ] Add a color for text selection and scrollbar.
