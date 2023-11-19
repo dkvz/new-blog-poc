@@ -1217,3 +1217,12 @@ input[type="text"] {
   }
 
 }
+
+/* 
+Gotta duplicate everything here for the JS theme
+switcher. It's kinda dumb but it's the best way
+I found.
+
+Gonna create a script that generates the dark 
+theme CSS from the media query above.
+*/
