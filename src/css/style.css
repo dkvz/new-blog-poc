@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-html {
+:root {
   --primary-color: rgb(110, 96, 204);
   --accent-color: rgb(182, 35, 150);
   --accent-color-lighter: rgba(224, 66, 190, 0.7);

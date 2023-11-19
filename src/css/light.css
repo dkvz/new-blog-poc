@@ -1,0 +1,11 @@
+:root {
+  --secondary-color: #edebed;
+  --secondary-color-transp: rgba(237, 235, 237, 0.86);
+  --grayed-color: #777;
+  --light-gray-color: #aaa;
+  --lighter-gray: #faf6f6;
+  --light-color: #fff;
+  --dark-color: rgb(68, 68, 68);
+  --dark-color-transp: rgba(68, 68, 68, 0.86);
+  --dark-color-extra-transp: rgb(68, 68, 68, 0.6);
+}
