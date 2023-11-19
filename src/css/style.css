@@ -42,6 +42,13 @@ html, body {
   background: linear-gradient(to bottom, var(--secondary-color) 0%,rgba(68,68,68,0.9) 100%);
 }
 
+.bg--gradient-clouds {
+  background-image: url('../img/clouds3.jpg');
+  background-repeat: repeat-y;
+  background-size: contain;
+  background-image: linear-gradient(90deg, rgba(110, 96, 204, 0.7) 0%, rgba(182, 35, 150, 0.7) 50%, rgba(252, 176, 69, 0.7) 100%), url('../img/seamless_clouds3.jpg');
+}
+
 .flex--center {
   display: flex;
   justify-content: center;
