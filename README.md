@@ -222,6 +222,7 @@ Actually I'll just use the Google CDN imports for now.
 # TODO
 - [ ] Maybe use some sort of tame rainbow bg for the articles page on dark mode? I have an example of that somewhere.
 - [ ] I should use 2 different stylesheets for light or dark, see here: https://web.dev/articles/prefers-color-scheme ; Also works great with the [switcher web component from Google](https://github.com/GoogleChromeLabs/dark-mode-toggle).
+- [ ] When a module bundler gets involved, generate only two CSS files (for light and dark) from a shared "global" and included CSS file.
 - [ ] I should use backdrop-filter somewhere, with a progressive fallback that makes sense. 
 - [x] Add the full size svg in noscript tags.
 - [ ] Date bubbles are way too small on cards, at least on large screens.
