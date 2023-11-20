@@ -68,3 +68,18 @@ body > footer {
 blockquote {
   background-color: var(--light-gray-color);
 }
+
+.header,
+.header__title,
+.menu-btn {
+  color: var(--grayed-color);
+}
+
+.menu-btn__icon rect,
+.header--sticky .menu-btn__icon rect {
+  fill: var(--grayed-color);
+}
+
+.menu-btn__icon {
+  border: 2px solid var(--dark-color);
+}
