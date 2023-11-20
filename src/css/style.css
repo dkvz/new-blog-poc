@@ -292,6 +292,9 @@ navigation links.
 }
 
 .hero__bottom {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
   z-index: 2;
 }
 
