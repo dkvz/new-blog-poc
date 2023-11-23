@@ -83,3 +83,7 @@ blockquote {
 .menu-btn__icon {
   border: 2px solid var(--dark-color);
 }
+
+.card__date-pill {
+  color: var(--grayed-color);
+}
