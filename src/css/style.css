@@ -34,6 +34,18 @@ html, body {
   min-height: 100vh;
 }
 
+/*dark-mode-toggle {
+  border-radius: 20%;
+  border: 2px solid var(--primary-color);
+  box-shadow: 2px 2px 2px var(--light-color);
+}*/
+
+dark-mode-toggle::part(fieldset) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /** Utilities **/
 
 .bg--gradient {
