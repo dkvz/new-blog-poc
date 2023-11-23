@@ -100,6 +100,13 @@ To save the SVG, use Save a Copy, pick "Optimized SVG" and use these options (no
 
 ## Specialized components
 
+### Dark mode switcher
+Interesting issue detailing how to style the component to be closer to a switch thingy: https://github.com/GoogleChromeLabs/dark-mode-toggle/issues/9
+
+For reference, I'm using two different stylesheets for light or dark, see here: https://web.dev/articles/prefers-color-scheme and the web component I use is here: [switcher web component from Google](https://github.com/GoogleChromeLabs/dark-mode-toggle)
+
+I may create my own in the future. Right now it's easiest to keep that web component and style it as a button with clear emphasis. Which might require custom shadows.
+
 ### Loader
 A simple stupid rotate could be the base idea for a loader: https://codepen.io/dkvz/pen/LXMaLV
 
