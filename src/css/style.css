@@ -46,6 +46,10 @@ dark-mode-toggle::part(fieldset) {
   align-items: center;
 }
 
+dark-mode-toggle::part(toggleLabel) {
+  padding: 1rem;
+}
+
 /** Utilities **/
 
 .bg--gradient {
@@ -544,7 +548,6 @@ article content and headlines */
   font-weight: bold;
 }
 
-
 .btn:hover, .btn:focus, .btn:active {
   background-color: var(--grayed-color);
   color: var(--lighter-gray);
@@ -553,6 +556,13 @@ article content and headlines */
 .btn:focus, .btn:active {
   padding: 0.4rem 0.8rem;
   border: 3px solid var(--accent-color);
+}
+
+.btn--no-padding,
+.btn--no-padding:focus,
+.btn--no-padding:active {
+  padding: 0;
+  border: none;
 }
 
 /*.cta-buttons__btn {
