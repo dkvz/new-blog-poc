@@ -558,11 +558,13 @@ article content and headlines */
   border: 3px solid var(--accent-color);
 }
 
-.btn--no-padding,
+.btn--no-padding {
+  padding: 3px 3px;
+}
+
 .btn--no-padding:focus,
 .btn--no-padding:active {
   padding: 0;
-  border: none;
 }
 
 /*.cta-buttons__btn {
