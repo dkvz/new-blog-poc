@@ -47,7 +47,7 @@ dark-mode-toggle::part(fieldset) {
 }
 
 dark-mode-toggle::part(toggleLabel) {
-  padding: 1rem;
+  padding: 0.4rem;
 }
 
 /** Utilities **/
@@ -309,8 +309,8 @@ navigation links.
 
 .hero__bottom {
   position: absolute;
-  bottom: -26px;
-  right: 14px;
+  bottom: -20px;
+  right: 16px;
   z-index: 2;
 }
 
@@ -1058,6 +1058,10 @@ input[type="text"] {
     padding: var(--main-padding);
   }
 
+  dark-mode-toggle::part(toggleLabel) {
+    padding: 1rem;
+  }
+
   .main-title {
     font-size: 3rem;
   }
@@ -1148,6 +1152,10 @@ input[type="text"] {
   .pill {
     font-size: 1rem;
     padding: 0.4rem 1.2rem;
+  }
+
+  .hero__bottom {
+    bottom: -26px;
   }
 
 }
