@@ -227,8 +227,6 @@ I'll do the woff and woff2 later, maybe Webpack or another bundler can generate 
 Actually I'll just use the Google CDN imports for now.
 
 # TODO
-- [ ] Does invertable--img still work? Test with theme switcher on both themes
-- [ ] See TODO in light.css.
 - [x] I should use 2 different stylesheets for light or dark, see here: https://web.dev/articles/prefers-color-scheme ; Also works great with the [switcher web component from Google](https://github.com/GoogleChromeLabs/dark-mode-toggle).
 - [ ] When a module bundler gets involved, generate only two CSS files (for light and dark) from a shared "global" and included CSS file.
 - [ ] I should use backdrop-filter somewhere, with a progressive fallback that makes sense. 
