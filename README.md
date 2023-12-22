@@ -233,7 +233,7 @@ Actually I'll just use the Google CDN imports for now.
 - [ ] I could re-organize colors so that only one CSS class would work in the global CSS files. For instance, header colors are currently forced reversed. I could have a "reverse" version of some CSS variables and use that instead.
 - [x] Maybe use some sort of tame rainbow bg for the articles page on dark mode? I have an example of that somewhere.
 - [x] Add the full size svg in noscript tags.
-- [ ] Date bubbles are way too small on cards, at least on large screens.
+- [x] Date bubbles are way too small on cards, at least on large screens.
 - [ ] Add a color for text selection and scrollbar.
 - [ ] Add a subtle shrimp rotation animation, with prefer-performance-thingy if applicable ?  
 - [ ] Add animation with intersection observer for article body titles.
