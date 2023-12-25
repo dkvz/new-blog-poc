@@ -235,7 +235,6 @@ Actually I'll just use the Google CDN imports for now.
 - [x] Add the full size svg in noscript tags.
 - [x] Date bubbles are way too small on cards, at least on large screens.
 - [x] Add a color for text selection and scrollbar.
-- [ ] Add a subtle shrimp rotation animation, with prefer-performance-thingy if applicable ?  
 - [ ] Add animation with intersection observer for article body titles.
 - [ ] With the gray gradient background, the transparency on the main sections of the home page is sort of useless (see `content-card--transp`).
 - [ ] How can I implement a header "progress bar" (more like progress-line)? Only for articles page.  Could be made using the border under the header.
