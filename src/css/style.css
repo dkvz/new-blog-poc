@@ -13,6 +13,7 @@
   --light-gray-color: #aaa;
   --lighter-gray: #faf6f6;
   --light-color: #fff;
+  --always-light-color: #fff;
   /*--dark-color: #555;*/
   --dark-color: rgb(68, 68, 68);
   --dark-color-transp: rgba(68, 68, 68, 0.86);
@@ -32,6 +33,11 @@
 
 html, body {
   min-height: 100vh;
+}
+
+::selection {
+  color: var(--always-light-color);
+  background-color: var(--accent-color);
 }
 
 /*dark-mode-toggle {
