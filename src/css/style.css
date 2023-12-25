@@ -33,6 +33,7 @@
 
 html, body {
   min-height: 100vh;
+  scrollbar-color: var(--primary-color) var(--light-color);
 }
 
 ::selection {
