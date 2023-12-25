@@ -219,6 +219,7 @@ I'm off to work out how the really weird [Intersection Observer API](https://dev
 Serif free fonts I like:
 * Volkorn
 * Philosopher
+* Nunito
 
 Trying Philosopher for article content.
 
@@ -271,8 +272,4 @@ Actually I'll just use the Google CDN imports for now.
 - [ ] If I want to do images homemade, there is such a thing as a SVG sprite: https://css-tricks.com/change-color-of-svg-on-hover/#article-header-id-1
 - [ ] Need to test everything on Chrome!
 - [ ] Add a special media query for super giga tiny screens. The CTA could use that one.
-- [ ] Hero has to be much better on the main page. I need some kind of image or graphics in it. Something to do with SVG.
-  * Can I use a SVG to create the bottom part and do some kind of cutting-wavy line or something?
-  * Or there's the good old cutting a circle and putting the shrimp in it, on top of the hero.
-  * Solid background color + shrimp cut out in it in SVG (white or dark shrimp - no colors) - Or multiple shrimps. -> That would be cool, I can animate that background.
 - [x] Figure out where to put the menu button, wheel or whatever it's going to be.

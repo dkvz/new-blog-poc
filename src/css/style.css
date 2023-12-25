@@ -509,6 +509,12 @@ article content and headlines */
   color: var(--light-color);
 }
 
+.footer-sections__image-link {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
 .cta-buttons {
   display: grid;
   grid-gap: 1rem;
