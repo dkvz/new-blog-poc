@@ -1174,6 +1174,28 @@ input[type="text"] {
 
 }
 
+/** Ultra small screens **/
+@media(max-width: 440px) {
+
+  html {
+    font-size: 0.7rem;
+  }
+
+  .hero__bottom {
+    bottom: 50px;
+    right: 5px;
+  }
+
+  .cta {
+    width: 100%;
+  }
+
+  svg.socials {
+    height: 24px;
+  }
+
+}
+
 @media(min-width: 650px) and (max-width: 1024px) {
 
   .main-title {

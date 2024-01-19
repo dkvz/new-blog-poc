@@ -253,7 +253,7 @@ Actually I'll just use the Google CDN imports for now.
 - [x] Opening the menu has to activate a global body overlay with JS. I'm going to use an attribute on body as I've already done in other projects.
 - [x] I can do the good old effect where the article round image sticks out from the top.
 - [x] I need the date, read more, and comment icons.
-- [ ] The spinner for loading extra content on the homepage could be a flat three dotes that get bigger and smaller alternatively.
+- [ ] The spinner for loading extra content on the homepage could be a flat three dots that get bigger and smaller alternatively.
 - [x] Ajouter une icone pour le lien flux RSS du footer, pour bien faire faudrait le mettre en orange aussi.
 - [ ] The controls to read more or go to comments for article cards should probably be links instead of buttons. I think.
 - [x] Just use BEM for once.
@@ -266,10 +266,9 @@ Actually I'll just use the Google CDN imports for now.
 - [ ] We could have the last shorts in a section that can be expanded to see more, same for articles. Of course, expanding should be animated. That way we could only have a few "last shorts" and "last articles". The expansion thing can be mounted as a (or part of a) component so that it's not visible when JS is disabled. The first few items shown are also server rendered when necessary.
 - [x] The menu has to work with Javascript disabled - I'm thinking of using the input checked trick. Plan B would have to have a second menu in a <noscript> tag.
 - [x] Header shouldn't be fixed this time around but I'm going to do something hybrid and hide-fade + padding transition it out at a certain point. It'll still be fixed if JS is disabled. Currently trying: transparent header into solid into removing it with transition.
-- [ ] Use CSS-grid (maybe with flex as the fallback) to have a mandatory grid-gap between the shrimps when we resize the width down.
 - [x] Add an outline on focused buttons. Very important for keyboard nav accessibility.
 - [ ] Also put a big outline (similar to the button one) on links - Escpecially the card links at the bottom.
 - [ ] If I want to do images homemade, there is such a thing as a SVG sprite: https://css-tricks.com/change-color-of-svg-on-hover/#article-header-id-1
 - [ ] Need to test everything on Chrome!
-- [ ] Add a special media query for super giga tiny screens. The CTA could use that one.
+- [x] Add a special media query for super giga tiny screens. The CTA could use that one.
 - [x] Figure out where to put the menu button, wheel or whatever it's going to be.
