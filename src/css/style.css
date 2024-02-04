@@ -1017,6 +1017,33 @@ input[type="text"] {
   animation: transleft 0.6s ease;
 }
 
+/* Titles reveal animation for articles */
+h1.pre-animate, 
+h2.pre-animate {
+  transform-origin: top left;
+  transform: rotate(-100deg) translateY(-500%);
+  opacity: 0;
+}
+
+h3.pre-animate,
+h4.pre-animate,
+h5.pre-animate {
+  transform: translateY(-200%);
+  opacity: 0;
+}
+
+.pre-animate-transition {
+  transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+}
+
+.animation-placeholder {
+  /* Still works with intersection observer */
+  visibility: hidden;
+  position: absolute;
+  height: 16em;
+  width: 80%;
+}
+
 @keyframes transleft {
   0% {
     transform: translate3d(-20vw, 0, 0);
