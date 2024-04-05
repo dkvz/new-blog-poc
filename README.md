@@ -231,7 +231,7 @@ Actually I'll just use the Google CDN imports for now.
 - [ ] What happens with article images and titles when printing? Are they invisible due to the reveal animation? -> Yes. Add a big print media query.
 - [x] I should use 2 different stylesheets for light or dark, see here: https://web.dev/articles/prefers-color-scheme ; Also works great with the [switcher web component from Google](https://github.com/GoogleChromeLabs/dark-mode-toggle).
 - [ ] When a module bundler gets involved, generate only two CSS files (for light and dark) from a shared "global" and included CSS file.
-- [ ] I should use backdrop-filter somewhere, with a progressive fallback that makes sense. 
+- [x] I should use backdrop-filter somewhere, with a progressive fallback that makes sense. 
 - [ ] I could re-organize colors so that only one CSS class would work in the global CSS files. For instance, header colors are currently forced reversed. I could have a "reverse" version of some CSS variables and use that instead. The --always-light-color value can replace some of my forced lighter colors on the dark theme.
 - [x] Maybe use some sort of tame rainbow bg for the articles page on dark mode? I have an example of that somewhere.
 - [x] Add the full size svg in noscript tags.

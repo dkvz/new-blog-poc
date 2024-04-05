@@ -109,6 +109,7 @@ body[data-overlay]:after {
   z-index: 1;
   background-color: #000;
   background-color: rgba(0,0,0,0.6);
+  backdrop-filter: blur(4px);
 }
 
 body[data-overlay] {
