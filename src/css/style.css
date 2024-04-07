@@ -1243,3 +1243,19 @@ h5.pre-animate {
   }
 
 }
+
+/* Need a bunch of overrides for printing */
+@media print {
+
+  .content-card {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .to-reveal,
+  .pre-animate {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+}
