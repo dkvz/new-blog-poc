@@ -228,6 +228,7 @@ I'll do the woff and woff2 later, maybe Webpack or another bundler can generate 
 Actually I'll just use the Google CDN imports for now.
 
 # TODO
+- [x] The controls to read more or go to comments for article cards should probably be links instead of buttons. I think.
 - [x] What happens with article images and titles when printing? Are they invisible due to the reveal animation? -> Yes. Add a big print media query.
 - [x] I should use 2 different stylesheets for light or dark, see here: https://web.dev/articles/prefers-color-scheme ; Also works great with the [switcher web component from Google](https://github.com/GoogleChromeLabs/dark-mode-toggle).
 - [ ] When a module bundler gets involved, generate only two CSS files (for light and dark) from a shared "global" and included CSS file.
@@ -256,7 +257,6 @@ Actually I'll just use the Google CDN imports for now.
 - [x] I need the date, read more, and comment icons.
 - [ ] The spinner for loading extra content on the homepage could be a flat three dots that get bigger and smaller alternatively.
 - [x] Ajouter une icone pour le lien flux RSS du footer, pour bien faire faudrait le mettre en orange aussi.
-- [ ] The controls to read more or go to comments for article cards should probably be links instead of buttons. I think.
 - [x] Just use BEM for once.
 - [x] Get more hero__img variation classes to get the right stroke-width or fix it using a style attribute.
 - [x] Hover on cards with images on top: can try animating the background zooming and moving slightly.

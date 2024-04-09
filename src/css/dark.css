@@ -14,7 +14,7 @@
 .bg--gradient {
   background-color: var(--light-color);
   /*background: linear-gradient(to bottom, rgb(37, 6, 37) 0%,var(--light-color) 100%);*/
-  background: linear-gradient(to bottom,var(--light-color) 0%,  rgb(37, 6, 37) 100%);
+  background: linear-gradient(to bottom, var(--light-color) 0%, rgb(37, 6, 37) 100%);
 }
 
 .quote-card {
@@ -25,15 +25,20 @@
   filter: invert();
 }
 
-.btn:hover, .btn:focus, .btn:active {
+.btn:hover,
+.btn:focus,
+.btn:active,
+a.btn:hover,
+a.btn:focus,
+a.btn:active {
   background-color: var(--secondary-color);
   color: var(--dark-color);
 }
 
-body > footer {
+body>footer {
   color: var(--secondary-color);
   /*background-color: var(--dark-color-quote);*/
-  background: linear-gradient(to bottom,var(--light-color) 0%,  rgb(37, 6, 37) 180%);
+  background: linear-gradient(to bottom, var(--light-color) 0%, rgb(37, 6, 37) 180%);
 }
 
 .hero {
