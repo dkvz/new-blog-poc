@@ -38,8 +38,8 @@ body {
 }
 
 ::selection {
-  color: var(--always-light-color);
-  background-color: var(--accent-color);
+  color: var(--light-color);
+  background-color: var(--primary-color);
 }
 
 /*dark-mode-toggle {
