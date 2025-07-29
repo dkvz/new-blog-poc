@@ -9,6 +9,8 @@
   --dark-color: rgb(243, 234, 211);
   --dark-color-transp: rgba(243, 234, 211, 0.86);
   --dark-color-extra-transp: rgb(243, 234, 211, 0.6);
+  --accent-color: #F5BDE6;
+  --primary-color: #8AADF4;
 
   /*
 * I also used this purple before:
@@ -93,8 +95,4 @@ blockquote {
 
 .menu-btn__icon {
   border: 2px solid var(--dark-color);
-}
-
-.card__date-pill {
-  color: var(--grayed-color);
 }
