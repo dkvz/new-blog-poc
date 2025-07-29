@@ -2,35 +2,28 @@
   box-sizing: border-box;
 }
 
-/*
-New colors:
-
-deep blue: #00223e
-light blue: #03737e
-orange: #fd7c04
-faded orange: #d88400
-red: #d43730
-yellow: #ffa101
-paper white: #daae91
-*/
-
 :root {
-  --primary-color: rgb(110, 96, 204);
+  --primary-color: rgb(138, 173, 244);
+
   --accent-color: rgb(182, 35, 150);
   --accent-color-lighter: rgba(224, 66, 190, 0.7);
   --ui-color: rgb(78, 205, 196);
-  --secondary-color: #edebed;
-  --secondary-color-transp: rgba(237, 235, 237, 0.86);
-  --grayed-color: #777;
-  --light-gray-color: #aaa;
-  --lighter-gray: #faf6f6;
-  --light-color: #fff;
+
+  --secondary-color: rgb(73, 77, 100);
+  --secondary-color-transp: rgba(73, 77, 100, 0.86);
+  --grayed-color: rgb(91, 96, 120);
+  --light-gray-color: rgb(165, 173, 203);
+  --lighter-gray: rgb(184, 192, 224);
+  --light-color: rgb(54, 58, 79);
+
   --always-light-color: #fff;
-  --dark-color: rgb(68, 68, 68);
-  --dark-color-transp: rgba(68, 68, 68, 0.86);
-  --dark-color-extra-transp: rgb(68, 68, 68, 0.6);
+
+  --dark-color: rgb(91, 96, 120);
+  --dark-color-transp: rgba(91, 96, 120, 0.86);
+  --dark-color-extra-transp: rgba(91, 96, 120, 0.6);
 
   --dark-color-quote: rgba(37, 6, 37, 0.15);
+
   --main-padding: 0.6rem;
   --content-padding: 0.6rem;
   --card-padding: 0.7rem;

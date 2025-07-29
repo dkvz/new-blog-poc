@@ -1,14 +1,30 @@
+/*
+Catpuccin colors (macchiato):
+
+dark bg: rgb(73, 77, 100);
+darker bg: rgb(54, 58, 79);
+lighter bg: rgb(91, 96, 120);
+muted red: rgb(236, 135, 150);
+greener: rgb(166, 218, 149);
+muted yellow: rgb(238, 212, 159);
+lightish indigo: rgb(138, 173, 244);
+pink: rgb(245, 189, 230);
+teal: rgb(139, 213, 202);
+light gray: rgb(184, 192, 224);
+"dark" gray: rgb(165, 173, 203);
+*/
+
 :root {
-  --secondary-color: rgb(119, 119, 119);
-  --secondary-color-transp: rgba(119, 119, 119, 0.86);
-  --grayed-color: rgb(235, 237, 235);
-  --light-gray-color: #333;
-  --lighter-gray: #999;
-  --light-color: rgb(68, 68, 68);
-  /*--dark-color: var(--grayed-color);*/
-  --dark-color: rgb(202, 190, 202);
-  --dark-color-transp: rgba(235, 237, 235, 0.86);
-  --dark-color-extra-transp: rgb(235, 237, 235, 0.6);
+  --primary-color: rgb(138, 173, 244);
+  --secondary-color: rgb(73, 77, 100);
+  --secondary-color-transp: rgba(73, 77, 100, 0.86);
+  --grayed-color: rgb(91, 96, 120);
+  --light-gray-color: rgb(165, 173, 203);
+  --lighter-gray: rgb(184, 192, 224);
+  --light-color: rgb(54, 58, 79);
+  --dark-color: rgb(91, 96, 120);
+  --dark-color-transp: rgba(91, 96, 120, 0.86);
+  --dark-color-extra-transp: rgba(91, 96, 120, 0.6);
 }
 
 .bg--gradient {
