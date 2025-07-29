@@ -46,7 +46,7 @@ a.btn:active {
 body>footer {
   color: var(--secondary-color);
   /*background-color: var(--dark-color-quote);*/
-  background: linear-gradient(to bottom, var(--light-color) 0%, rgb(37, 6, 37) 180%);
+  background: linear-gradient(to bottom, var(--light-color) 0%, rgb(69, 71, 90) 100%);
 }
 
 .hero {
@@ -55,6 +55,10 @@ body>footer {
 
 .footer-sections p {
   color: var(--dark-color);
+}
+
+.footer a:hover {
+  color: var(--lighter-gray);
 }
 
 .pill {
