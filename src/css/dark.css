@@ -1,6 +1,7 @@
 :root {
-  --secondary-color: rgb(119, 119, 119);
-  --secondary-color-transp: rgba(119, 119, 119, 0.86);
+  /* --secondary-color: rgb(119, 119, 119); */
+  --secondary-color: rgb(165, 173, 203);
+  --secondary-color-transp: rgba(165, 173, 203, 0.3);
   --grayed-color: rgb(251, 241, 199);
   --light-gray-color: #333;
   --lighter-gray: #999;
@@ -12,6 +13,8 @@
   --accent-color: #F5BDE6;
   --primary-color: #8AADF4;
 
+  /* TODO: Missing accent-color */
+  --accent-color-lighter: rgb(139, 213, 202);
   /*
 * I also used this purple before:
 * rgb(37, 6, 37);
@@ -40,7 +43,7 @@ a.btn:hover,
 a.btn:focus,
 a.btn:active {
   background-color: var(--secondary-color);
-  color: var(--dark-color);
+  color: var(--light-color);
 }
 
 body>footer {
