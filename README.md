@@ -55,6 +55,10 @@ I like that page: https://en.wikipedia.org/wiki/Web_colors
 * Dark gray bg: #262626
 * Gray subtext #727272
 
+### How to change the color theme
+I now have to also edit dark.css and light.css on top of having the repeat colors in the main file and my current color scheme is sort of inverting things to create the dark theme.
+
+I should probably work on making a great dark theme first, then adapt the light theme from it.
 
 ## SVGs in top bar
 I thought of inlining a very compressed version then load the full one and replace the SVG content with it when loaded.
@@ -228,7 +232,7 @@ I'll do the woff and woff2 later, maybe Webpack or another bundler can generate 
 Actually I'll just use the Google CDN imports for now.
 
 # TODO
-- [] Tiny screen media query seems to bug out on Firefox with content cards overflowing.
+- [ ] Tiny screen media query seems to bug out on Firefox with content cards overflowing.
 - [x] The controls to read more or go to comments for article cards should probably be links instead of buttons. I think.
 - [x] What happens with article images and titles when printing? Are they invisible due to the reveal animation? -> Yes. Add a big print media query.
 - [x] I should use 2 different stylesheets for light or dark, see here: https://web.dev/articles/prefers-color-scheme ; Also works great with the [switcher web component from Google](https://github.com/GoogleChromeLabs/dark-mode-toggle).

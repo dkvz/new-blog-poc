@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+/*
+New colors:
+
+deep blue: #00223e
+light blue: #03737e
+orange: #fd7c04
+faded orange: #d88400
+red: #d43730
+yellow: #ffa101
+paper white: #daae91
+*/
+
 :root {
   --primary-color: rgb(110, 96, 204);
   --accent-color: rgb(182, 35, 150);
@@ -14,10 +26,10 @@
   --lighter-gray: #faf6f6;
   --light-color: #fff;
   --always-light-color: #fff;
-  /*--dark-color: #555;*/
   --dark-color: rgb(68, 68, 68);
   --dark-color-transp: rgba(68, 68, 68, 0.86);
   --dark-color-extra-transp: rgb(68, 68, 68, 0.6);
+
   --dark-color-quote: rgba(37, 6, 37, 0.15);
   --main-padding: 0.6rem;
   --content-padding: 0.6rem;
