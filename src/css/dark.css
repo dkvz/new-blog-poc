@@ -13,6 +13,9 @@
   --primary-color: #8AADF4;
   --accent-color: #F5BDE6;
   --accent-color-lighter: rgb(139, 213, 202);
+
+  --text-shadow-2: 0px 0px 8px var(--primary-color);
+
   /*
 * I also used this purple before:
 * rgb(37, 6, 37);

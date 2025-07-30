@@ -24,7 +24,7 @@
   --card-padding: 0.7rem;
   --ui-shadow: 0px 0px 4px var(--dark-color);
   --text-shadow-1: 2px 2px 2px var(--accent-color);
-  --text-shadow-2: 0px 0px 6px var(--accent-color);
+  --text-shadow-2: 0px 0px 8px var(--accent-color);
   --main-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   --article-font: 'Philosopher', medium-content-serif-font, Georgia, Cambria, serif;
   --container-width: 1000px;
