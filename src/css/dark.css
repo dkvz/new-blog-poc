@@ -47,6 +47,15 @@ a.btn:active {
   color: var(--light-color);
 }
 
+.btn:hover>img.icon,
+.btn:focus>img.icon,
+.btn:active>img.icon,
+a.btn:hover>img.icon,
+a.btn:focus>img.icon,
+a.btn:active>img.icon {
+  filter: invert();
+}
+
 body>footer {
   color: var(--secondary-color);
   /*background-color: var(--dark-color-quote);*/

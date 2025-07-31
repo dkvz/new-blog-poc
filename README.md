@@ -232,7 +232,7 @@ I'll do the woff and woff2 later, maybe Webpack or another bundler can generate 
 Actually I'll just use the Google CDN imports for now.
 
 # TODO
-- [ ] The button outline is reflowing content, margin changing? Happens at least on Firefox.
+- [ ] The button outline is reflowing content, margin changing? Happens at least on Firefox on my machine - I don't have the issue on a different machine also with Firefox, might be a Linux gag
 - [ ] Tiny screen media query seems to bug out on Firefox with content cards overflowing.
 - [x] The controls to read more or go to comments for article cards should probably be links instead of buttons. I think.
 - [x] What happens with article images and titles when printing? Are they invisible due to the reveal animation? -> Yes. Add a big print media query.
