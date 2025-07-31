@@ -838,8 +838,12 @@ a.btn:active {
 .btn:active,
 a.btn:focus,
 a.btn:active {
-  padding: 0.4rem 0.8rem;
-  border: 3px solid var(--accent-color);
+  /* padding: 0.4rem 0.8rem; */
+  /* 
+    box-shadow doesn't work as an outline because windows
+    in high contrast mode disables box-shadow entirely 
+  */
+  outline: 2px solid var(--accent-color);
 }
 
 .btn--highlight {
