@@ -58,34 +58,6 @@ dark-mode-toggle::part(toggleLabel) {
   padding: 0.4rem;
 }
 
-/** Utilities **/
-
-.bg--gradient {
-  background-color: var(--secondary-color);
-  /*background: linear-gradient(to bottom, rgba(220,220,220,0.9) 0%,rgba(69,90,100,0.9) 100%);*/
-  background: linear-gradient(to right bottom, rgb(184, 192, 224) 0%, rgba(73, 77, 100, 0.9) 70%);
-}
-
-.bg--gradient-clouds {
-  background-image: url('../img/clouds3.jpg');
-  background-repeat: repeat-y;
-  background-size: contain;
-  /* Lighter version:
-  background: linear-gradient(90deg, rgba(110, 96, 204, 0.7) 0%, rgba(182, 35, 150, 0.7) 50%, rgba(252, 176, 69, 0.7) 100%), url('../img/seamless_clouds3.jpg');*/
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), linear-gradient(90deg, rgba(110, 96, 204, 0.7) 0%, rgba(182, 35, 150, 0.7) 50%, rgba(252, 176, 69, 0.7) 100%), url('../img/seamless_clouds3.jpg');
-}
-
-.flex--center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mr--1 {
-  margin-right: 0.5rem;
-}
-
-/** End utilities **/
 
 body {
   font-family: var(--main-font);
@@ -1074,6 +1046,34 @@ h5.pre-animate {
   position: absolute;
   height: 16em;
   width: 80%;
+}
+
+
+/* Utilities should be here (they're not all here) */
+
+.bg--gradient {
+  background-color: var(--secondary-color);
+  /*background: linear-gradient(to bottom, rgba(220,220,220,0.9) 0%,rgba(69,90,100,0.9) 100%);*/
+  background: linear-gradient(to right bottom, rgb(184, 192, 224) 0%, rgba(73, 77, 100, 0.9) 70%);
+}
+
+.bg--gradient-clouds {
+  background-image: url('../img/clouds3.jpg');
+  background-repeat: repeat-y;
+  background-size: contain;
+  /* Lighter version:
+  background: linear-gradient(90deg, rgba(110, 96, 204, 0.7) 0%, rgba(182, 35, 150, 0.7) 50%, rgba(252, 176, 69, 0.7) 100%), url('../img/seamless_clouds3.jpg');*/
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), linear-gradient(90deg, rgba(110, 96, 204, 0.7) 0%, rgba(182, 35, 150, 0.7) 50%, rgba(252, 176, 69, 0.7) 100%), url('../img/seamless_clouds3.jpg');
+}
+
+.flex--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mr--1 {
+  margin-right: 0.5rem;
 }
 
 @keyframes transleft {
