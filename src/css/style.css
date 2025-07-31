@@ -347,6 +347,10 @@ svg.hero__img--v2-loaded * {
   color: var(--light-color);
 }
 
+.comments__title {
+  text-shadow: var(--text-shadow-2);
+}
+
 .main-title {
   text-shadow: var(--text-shadow-2);
   text-align: center;
@@ -1170,6 +1174,9 @@ h5.pre-animate {
 } */
 
 @media(min-width: 650px) {
+  :root {
+    --content-padding: 1.6rem;
+  }
 
   body>main {
     padding: var(--main-padding);
