@@ -841,6 +841,12 @@ input[type="text"] {
   font-weight: bold;
 }
 
+.icon__btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 /* Reset stuff on a.btn */
 a.btn:hover {
   animation: none;
