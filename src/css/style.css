@@ -348,7 +348,7 @@ svg.hero__img--v2-loaded * {
 }
 
 .comments__title {
-  text-shadow: var(--text-shadow-2);
+  text-shadow: var(--text-shadow-1);
 }
 
 .main-title {
@@ -654,7 +654,6 @@ article content and headlines */
   flex: 1;
   padding: var(--card-padding);
   text-align: justify;
-  /*box-shadow: inset 0px 0px 2px rgba(0, 0, 0, .5);*/
 }
 
 .card__large-img {
@@ -999,6 +998,18 @@ a.btn:active {
   margin-top: 1.2rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.4rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.8rem;
+}
+
+.mb-3 {
+  margin-bottom: 1.2rem;
+}
+
 .right {
   float: right;
   margin-left: 0.8rem;
@@ -1058,6 +1069,10 @@ h5.pre-animate {
 
 
 /* Utilities should be here (they're not all here) */
+
+.img--flipped {
+  transform: scaleX(-1);
+}
 
 .bg--gradient {
   background-color: var(--secondary-color);
