@@ -245,7 +245,6 @@ Actually I'll just use the Google CDN imports for now.
 - [x] Date bubbles are way too small on cards, at least on large screens.
 - [x] Add a color for text selection and scrollbar.
 - [x] Add animation with intersection observer for article body titles.
-- [ ] With the gray gradient background, the transparency on the main sections of the home page is sort of useless (see `content-card--transp`).
 - [ ] How can I implement a header "progress bar" (more like progress-line)? Only for articles page.  Could be made using the border under the header.
 - [x] When the menu is showing, bind Esc to hide it.
 - [ ] Dyanmic nav could be refactored to use intersection observer. 
