@@ -624,6 +624,11 @@ article content and headlines */
   flex-direction: column;
 }
 
+/* Has to be here for cascade priority reasons */
+.card--rounded-bottom {
+  border-bottom-right-radius: 10%;
+}
+
 .card__header {
   overflow: hidden;
   display: flex;
