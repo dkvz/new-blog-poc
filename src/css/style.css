@@ -348,7 +348,9 @@ svg.hero__img--v2-loaded * {
 }
 
 .comments__title {
-  text-shadow: var(--text-shadow-1);
+  margin-top: 10px;
+  padding-bottom: 1rem;
+  border-bottom: solid 2px var(--lighter-gray);
 }
 
 .main-title {
@@ -1025,6 +1027,10 @@ a.btn:active {
   animation: scaleup 0.5s ease-in-out forwards;
 }
 
+.sm-w-full {
+  width: 100%;
+}
+
 @keyframes scaleup {
   0% {}
 
@@ -1299,6 +1305,10 @@ h5.pre-animate {
 
   .hero__bottom {
     bottom: -26px;
+  }
+
+  .sm-w-full {
+    width: initial;
   }
 
 }
