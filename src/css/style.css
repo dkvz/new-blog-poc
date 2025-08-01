@@ -29,6 +29,7 @@
   --article-font: 'Philosopher', medium-content-serif-font, Georgia, Cambria, serif;
   --container-width: 1000px;
   --hero-inset-shadow: inset 0px 0px 60px 10px rgba(0, 0, 0, .6);
+  --separator: solid 1px var(--lighter-gray);
 }
 
 html,
@@ -350,7 +351,7 @@ svg.hero__img--v2-loaded * {
 .comments__title {
   margin-top: 10px;
   padding-bottom: 1rem;
-  border-bottom: solid 2px var(--lighter-gray);
+  border-bottom: var(--separator);
 }
 
 .main-title {
