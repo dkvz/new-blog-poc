@@ -617,6 +617,12 @@ article content and headlines */
   align-items: center;
 }
 
+.comment-card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .card__date-pill {
   position: absolute;
   top: 20px;
@@ -634,6 +640,15 @@ article content and headlines */
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card__date-box {
+  position: absolute;
+  top: -2.4rem;
+  right: 0;
+  background-color: var(--light-color);
+  padding: 10px;
+  border: 2px solid var(--lighter-gray);
 }
 
 .card--hoverable {
@@ -673,14 +688,16 @@ article content and headlines */
   background: var(--light-color);
 }
 
-.card__header h1 {
+.card__header h1,
+.comment-card__header h1 {
   padding: var(--card-padding);
   margin: 0;
   margin-top: 0.3rem;
   font-size: 1.6rem;
 }
 
-.card__header h1::after {
+.card__header h1::after,
+.comment-card__header h1::after {
   display: block;
   margin-top: 1rem;
   height: 6px;
@@ -725,7 +742,8 @@ article content and headlines */
   margin-bottom: 0.6rem;
 }
 
-.card__info>div {
+.card__info>div,
+.comment-card__info>div {
   padding: var(--card-padding);
   color: var(--grayed-color);
   /*border-top: 4px solid var(--accent-color);*/
@@ -819,6 +837,8 @@ input[type="text"] {
   font-weight: bold;
 }
 
+/* I also use this to generally align text and icons
+* WHICH IS BAD */
 .icon__btn {
   display: flex;
   align-items: center;
@@ -937,10 +957,6 @@ a.btn:active {
   transform: rotate(-45deg) translate(-4px, -2px);
 }
 
-/*.card-list__btn {
-  background-color: var(--light-gray-color);
-}*/
-
 .card-list--single .card-list__btn {
   grid-column: initial;
 }
@@ -972,6 +988,10 @@ a.btn:active {
 .icon {
   vertical-align: middle;
   height: 20px;
+}
+
+.icon__medium {
+  height: 28px;
 }
 
 .quote-card {
@@ -1310,6 +1330,10 @@ h5.pre-animate {
 
   .sm-w-full {
     width: initial;
+  }
+
+  .icon__medium {
+    height: 32px;
   }
 
 }
