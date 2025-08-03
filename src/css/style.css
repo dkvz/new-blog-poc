@@ -53,6 +53,9 @@ dialog {
   border: none;
   /* showModal uses margins to position vertically */
   margin-top: 10%;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 ::selection {
@@ -776,11 +779,16 @@ article content and headlines */
   padding-right: 0.2rem;
 }
 
-input[type="text"] {
+input[type="text"],
+textarea {
   font-family: var(--main-font);
   padding: 10px 6px;
   background-color: var(--light-color);
   color: var(--dark-color);
+}
+
+textarea {
+  resize: none;
 }
 
 .search__input {
@@ -818,6 +826,17 @@ input[type="text"] {
   outline: 0;
   transition: transform .3s, background-color .3s;
 }*/
+.comment__form {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+  flex: 1;
+}
+
+.comment__form>input[type="text"],
+.comment__form>textarea {
+  font-size: 1rem;
+}
 
 .btn {
   background-color: var(--light-gray-color);
