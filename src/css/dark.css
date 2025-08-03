@@ -37,6 +37,10 @@
   filter: invert();
 }
 
+dialog {
+  background-color: var(--lighter-gray);
+}
+
 .btn:hover,
 .btn:focus,
 .btn:active,
