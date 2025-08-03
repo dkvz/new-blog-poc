@@ -46,7 +46,7 @@ dialog::backdrop {
 }
 
 dialog {
-  background-color: var(--light-gray-color);
+  background-color: var(--dark-color);
   color: var(--dark-color);
   width: 99%;
   overflow-y: auto;
@@ -55,6 +55,9 @@ dialog {
   margin-top: 10%;
   min-height: 350px;
   max-height: 80%;
+}
+
+dialog[open] {
   display: flex;
   flex-direction: column;
 }
@@ -848,6 +851,11 @@ textarea {
 .comment__form-footer {
   display: flex;
   justify-content: flex-end;
+  gap: 1rem;
+}
+
+.comment__form-title {
+  color: var(--light-color);
 }
 
 .btn {

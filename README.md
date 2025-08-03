@@ -232,6 +232,7 @@ I'll do the woff and woff2 later, maybe Webpack or another bundler can generate 
 Actually I'll just use the Google CDN imports for now.
 
 # TODO
+- [ ] My BEM naming went to the toilet at some point, maybe revise it? Pretty sure comment__form is not a thing
 - [ ] Padding can probably be bigger for article content on large-ish screens
 - [x] The button outline is reflowing content, margin changing? Happens at least on Firefox on my machine - I don't have the issue on a different machine also with Firefox, might be a Linux gag
 - [ ] Tiny screen media query seems to bug out on Firefox with content cards overflowing.
