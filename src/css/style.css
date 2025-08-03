@@ -38,6 +38,23 @@ body {
   scrollbar-color: var(--primary-color) var(--light-color);
 }
 
+dialog::backdrop {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  overflow: hidden;
+}
+
+dialog {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  width: 99%;
+  overflow-y: auto;
+  border: none;
+  /* showModal uses margins to position vertically */
+  /* margin-top: 10%; */
+}
+
 ::selection {
   color: var(--light-color);
   background-color: var(--primary-color);
@@ -70,24 +87,6 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-}
-
-body[data-overlay]:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  background-color: #000;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
-}
-
-body[data-overlay] {
-  overflow: hidden;
 }
 
 a {

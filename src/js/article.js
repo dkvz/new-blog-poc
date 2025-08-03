@@ -18,7 +18,7 @@ const imgObserver = new IntersectionObserver((entries, observer) => {
     }
   }
 },
-{ threshold: revThres })
+  { threshold: revThres })
 
 for (const img of artImgs) {
   img.classList.add("to-reveal")
@@ -33,7 +33,7 @@ const titles = Array.from(articleContent.querySelectorAll(
 // Has to be uppercase for browser API reasons of the past:
 const placeholderTag = "HR"
 
-const requiresPlaceholder = (node) => 
+const requiresPlaceholder = (node) =>
   node.tagName === "H1" || node.tagName === "H2"
 
 /*const toObserve = titles.map(t => {
@@ -56,7 +56,7 @@ const titleObserver = new IntersectionObserver((entries, observer) => {
     if (en.isIntersecting === true) {
       const elementRef = en.target.tagName === placeholderTag ?
         en.target.nextSibling : en.target
-      
+
       if (!elementRef.getAttribute("data-animated")) {
         elementRef.classList.add("pre-animate-transition")
         elementRef.setAttribute("data-animated", true)
@@ -67,11 +67,11 @@ const titleObserver = new IntersectionObserver((entries, observer) => {
       }
     }
   }
-}, 
-{
-  threshold: 0.25,
-  root: document
-})
+},
+  {
+    threshold: 0.25,
+    root: document
+  })
 
 for (const t of titles) {
   t.classList.add("pre-animate")
@@ -88,3 +88,9 @@ for (const t of titles) {
     titleObserver.observe(t)
   }
 }
+
+// Comment dialog
+const commentDialog = document.querySelector("#comment-dialog")
+const commentButton = document.querySelector("#comment-button")
+
+commentButton.addEventListener("click", () => commentDialog.showModal())

@@ -224,7 +224,7 @@
         <div class="content-card">
           <h2 class="comments__title">Commentaires</h2>
           <div class="mb-2">
-            <button type="button" class="btn icon__btn sm-w-full">
+            <button id="comment-button" type="button" class="btn icon__btn sm-w-full">
               <img src="img/comment-alt.svg" class="icon" alt="Commentaires">
               Ecrire un bon vieux commentaire...
             </button>
@@ -286,6 +286,17 @@
       <img src="img/gillescut_300.png" alt="Test Image 2">
     </div>
   </footer>
+
+  <dialog id="comment-dialog">
+    <form method="dialog">
+      <button aria-label="close" style="float: right">Close</button>
+    </form>
+    <h2>Ah que coucou</h2>
+    <p>Petit test de boite de dialogue potentiellement modal</p>
+    <p>Il se passe quoi si j'ajoute plus de contenu</p>
+    <p>Il se passe quoi si j'ajoute plus de contenu</p>
+    <p>Je pense qu'il faudra du overflow scroll</p>
+  </dialog>
 
   <script src="https://unpkg.com/@dkvz/img-lightbox@0.2.0/dist/img-lightbox.js"></script>
   <script>
