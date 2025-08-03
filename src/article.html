@@ -287,15 +287,18 @@
     </div>
   </footer>
 
-  <dialog id="comment-dialog" class="trans-top">
-    <form method="dialog">
+  <dialog id="comment-dialog">
+    <!--<form method="dialog">
       <button aria-label="close" class="btn" style="float: right">X</button>
-    </form>
+      </form>-->
     <h2>Ajouter un commentaire</h2>
     <form action="#" class="comment__form">
       <input type="text" class="input" name="comment-author" id="comment-author" placeholder="Votre nom...">
       <textarea class="input" placeholder="Votre commentaire..." name="comment-comment" id="comment-comment"></textarea>
-
+      <footer class="comment__form-footer">
+        <button aria-label="close" formmethod="dialog" class="btn">Annuler</button>
+        <button type="submit" class="btn">Envoyer</button>
+      </footer>
     </form>
   </dialog>
 

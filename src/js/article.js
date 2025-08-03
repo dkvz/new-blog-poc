@@ -93,4 +93,10 @@ for (const t of titles) {
 const commentDialog = document.querySelector("#comment-dialog")
 const commentButton = document.querySelector("#comment-button")
 
-commentButton.addEventListener("click", () => commentDialog.showModal())
+commentButton.addEventListener("click", () => {
+  commentDialog.classList.remove("trans-top")
+  setTimeout(() => {
+    commentDialog.classList.add("trans-top")
+    commentDialog.showModal()
+  })
+})

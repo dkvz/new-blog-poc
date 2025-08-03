@@ -46,14 +46,15 @@ dialog::backdrop {
 }
 
 dialog {
-  background-color: var(--light-color);
+  background-color: var(--light-gray-color);
   color: var(--dark-color);
   width: 99%;
   overflow-y: auto;
   border: none;
   /* showModal uses margins to position vertically */
   margin-top: 10%;
-  min-height: 50%;
+  min-height: 350px;
+  max-height: 80%;
   display: flex;
   flex-direction: column;
 }
@@ -780,9 +781,9 @@ article content and headlines */
 }
 
 input[type="text"],
-textarea {
+textarea.input {
   font-family: var(--main-font);
-  padding: 10px 6px;
+  padding: 0.5rem 0.6rem;
   background-color: var(--light-color);
   color: var(--dark-color);
 }
@@ -827,15 +828,26 @@ textarea {
   transition: transform .3s, background-color .3s;
 }*/
 .comment__form {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
   flex: 1;
+  height: 100%;
 }
 
 .comment__form>input[type="text"],
 .comment__form>textarea {
   font-size: 1rem;
+}
+
+.comment__form>textarea {
+  flex: 1;
+}
+
+.comment__form-footer {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .btn {
@@ -1087,7 +1099,7 @@ a.btn:active {
 
 /* I use this for dialogs, maybe? */
 .trans-top {
-  animation: transtop 0.5s ease-out;
+  animation: transtop 0.3s ease-out;
 }
 
 /* Titles reveal animation for articles */
