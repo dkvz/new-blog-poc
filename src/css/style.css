@@ -306,6 +306,7 @@ navigation links.
 
 .hero__img {
   height: 45%;
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
 }
 
 svg.hero__img * {
