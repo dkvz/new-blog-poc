@@ -51,6 +51,7 @@ dialog {
   width: 99%;
   overflow-y: auto;
   border: none;
+  border-radius: 4px;
   /* showModal uses margins to position vertically */
   margin-top: 10%;
   min-height: 350px;
