@@ -123,3 +123,11 @@ blockquote {
   background-clip: text;
   text-shadow: var(--text-shadow-2);
 }
+
+.only--on-light {
+  display: none;
+}
+
+.only--on-dark {
+  display: initial;
+}

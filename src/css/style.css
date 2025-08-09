@@ -1183,6 +1183,10 @@ h5.pre-animate {
   margin-right: 0.5rem;
 }
 
+.only--on-dark {
+  display: none;
+}
+
 @keyframes transleft {
   0% {
     transform: translate3d(-20vw, 0, 0);
