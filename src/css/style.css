@@ -368,6 +368,14 @@ svg.hero__img--v2-loaded * {
   font-size: 2rem;
 }
 
+.main-title__highlight {
+  display: inline-block;
+  background: linear-gradient(to right, var(--ui-color) 0%, var(--light-color) 80%);
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+}
+
 body>footer {
   color: var(--light-color);
   background-color: var(--dark-color);

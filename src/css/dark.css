@@ -117,3 +117,9 @@ blockquote {
 .menu-btn__icon {
   border: 2px solid var(--dark-color);
 }
+
+.main-title__highlight {
+  background: linear-gradient(90deg, var(--dark-color) 0%, var(--light-color) 60%);
+  background-clip: text;
+  text-shadow: var(--text-shadow-2);
+}

@@ -232,6 +232,7 @@ I'll do the woff and woff2 later, maybe Webpack or another bundler can generate 
 Actually I'll just use the Google CDN imports for now.
 
 # TODO
+- [ ] Maybe the dark mode toggle shouldn't be pressed all the time when focused
 - [ ] Section title is still too small
 - [ ] My BEM naming went to the toilet at some point, maybe revise it? Pretty sure comment__form is not a thing
 - [ ] Padding can probably be bigger for article content on large-ish screens
