@@ -550,7 +550,11 @@ article content and headlines */
 .section-title__big-title,
 .article-header {
   padding: 0 0 1.2rem 0;
-  border-bottom: solid 6px var(--primary-color);
+  /*border-bottom: solid 6px var(--primary-color);*/
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+  border-color: var(--primary-color);
+  border-image: linear-gradient(to right, var(--ui-color), var(--accent-color)) 50;
 }
 
 .section-title__title,

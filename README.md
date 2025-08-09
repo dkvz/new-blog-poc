@@ -232,6 +232,7 @@ I'll do the woff and woff2 later, maybe Webpack or another bundler can generate 
 Actually I'll just use the Google CDN imports for now.
 
 # TODO
+- [ ] Section title is still too small
 - [ ] My BEM naming went to the toilet at some point, maybe revise it? Pretty sure comment__form is not a thing
 - [ ] Padding can probably be bigger for article content on large-ish screens
 - [x] The button outline is reflowing content, margin changing? Happens at least on Firefox on my machine - I don't have the issue on a different machine also with Firefox, might be a Linux gag
@@ -269,11 +270,9 @@ Actually I'll just use the Google CDN imports for now.
   * Use use a hover animation such as the one here: https://beautifuldingbats.com
 - [x] Search input could have bigger text and more padding.
 - [ ] Cards normally have a "bubble" animation on click. Same for buttons.
-- [ ] We could have the last shorts in a section that can be expanded to see more, same for articles. Of course, expanding should be animated. That way we could only have a few "last shorts" and "last articles". The expansion thing can be mounted as a (or part of a) component so that it's not visible when JS is disabled. The first few items shown are also server rendered when necessary.
 - [x] The menu has to work with Javascript disabled - I'm thinking of using the input checked trick. Plan B would have to have a second menu in a <noscript> tag.
 - [x] Header shouldn't be fixed this time around but I'm going to do something hybrid and hide-fade + padding transition it out at a certain point. It'll still be fixed if JS is disabled. Currently trying: transparent header into solid into removing it with transition.
 - [x] Add an outline on focused buttons. Very important for keyboard nav accessibility.
 - [ ] Also put a big outline (similar to the button one) on links - Escpecially the card links at the bottom.
-- [ ] If I want to do images homemade, there is such a thing as a SVG sprite: https://css-tricks.com/change-color-of-svg-on-hover/#article-header-id-1
 - [ ] Need to test everything on Chrome!
 - [x] Figure out where to put the menu button, wheel or whatever it's going to be.
