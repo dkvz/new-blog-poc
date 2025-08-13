@@ -11,6 +11,11 @@ The `src` folder has the work in progress. You can find previous versions at the
 ## Fonts
 I started out with sans-serif, have not figured anything out yet but I probably won't use a downloadable font.
 
+## BEM
+I initially wanted to use BEM but the naming went down the drain at some point.
+
+Doesn't matter since people don't use BEM in 2025 and I'll ditch it afterwards for modern layered CSS.
+
 ## Colors
   * Teal
     * rgb(78, 205, 196)
@@ -233,11 +238,9 @@ Actually I'll just use the Google CDN imports for now.
 
 # TODO
 - [ ] Maybe the dark mode toggle shouldn't be pressed all the time when focused
-- [ ] Section title is still too small
-- [ ] My BEM naming went to the toilet at some point, maybe revise it? Pretty sure comment__form is not a thing
+- [x] Section title is still too small
 - [ ] Padding can probably be bigger for article content on large-ish screens
 - [x] The button outline is reflowing content, margin changing? Happens at least on Firefox on my machine - I don't have the issue on a different machine also with Firefox, might be a Linux gag
-- [ ] Tiny screen media query seems to bug out on Firefox with content cards overflowing.
 - [x] The controls to read more or go to comments for article cards should probably be links instead of buttons. I think.
 - [x] What happens with article images and titles when printing? Are they invisible due to the reveal animation? -> Yes. Add a big print media query.
 - [x] I should use 2 different stylesheets for light or dark, see here: https://web.dev/articles/prefers-color-scheme ; Also works great with the [switcher web component from Google](https://github.com/GoogleChromeLabs/dark-mode-toggle).
@@ -265,7 +268,6 @@ Actually I'll just use the Google CDN imports for now.
 - [x] I need the date, read more, and comment icons.
 - [ ] The spinner for loading extra content on the homepage could be a flat three dots that get bigger and smaller alternatively.
 - [x] Ajouter une icone pour le lien flux RSS du footer, pour bien faire faudrait le mettre en orange aussi.
-- [x] Just use BEM for once.
 - [x] Get more hero__img variation classes to get the right stroke-width or fix it using a style attribute.
 - [x] Hover on cards with images on top: can try animating the background zooming and moving slightly.
   * Use use a hover animation such as the one here: https://beautifuldingbats.com
