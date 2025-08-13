@@ -844,6 +844,7 @@ textarea {
   outline: 0;
   transition: transform .3s, background-color .3s;
 }*/
+
 .comment__form {
   display: flex;
   flex-direction: column;

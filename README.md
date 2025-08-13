@@ -237,7 +237,7 @@ I'll do the woff and woff2 later, maybe Webpack or another bundler can generate 
 Actually I'll just use the Google CDN imports for now.
 
 # TODO
-- [ ] Maybe the dark mode toggle shouldn't be pressed all the time when focused
+- [ ] Maybe the dark mode toggle shouldn't be pressed all the time when focused - This isn't due to the active or focus styles (I think)
 - [x] Section title is still too small
 - [ ] Padding can probably be bigger for article content on large-ish screens
 - [x] The button outline is reflowing content, margin changing? Happens at least on Firefox on my machine - I don't have the issue on a different machine also with Firefox, might be a Linux gag
