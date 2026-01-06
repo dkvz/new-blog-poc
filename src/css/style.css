@@ -108,6 +108,7 @@ a:active {
 }
 
 .article-image {
+  width: fit-content;
   box-shadow: var(--ui-shadow);
 }
 
